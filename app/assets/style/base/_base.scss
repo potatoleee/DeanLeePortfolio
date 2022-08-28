@@ -1,0 +1,154 @@
+
+
+// 使footer置底 start
+html,body{
+    height: 100%;
+    margin: 0;
+}
+body {
+    display: flex; /*使物件依序排列*/
+    flex-direction: column; /*使物件垂直排列*/
+  }
+main{
+        flex-grow: 1; /*可佔滿垂直剩餘的空間*/
+        background-color: $body-bg;
+}
+// 使footer置底 end
+
+
+
+
+
+body{
+   font-family: 'Noto Sans TC' , ' Noto Serif TC' ,  sans-serif;
+   font-weight: 400;
+   color:#161A14;
+   line-height: 1.5;
+   scroll-behavior: smooth;
+}
+
+
+a{
+    text-decoration: none;
+    color:$black-100;
+   
+}     
+
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+h1, h2, h3, h4, h5, h6,ul,ol,p{
+    margin: 0;
+}
+
+ol, ul {
+	list-style: none;
+    padding-left: 0;
+}
+
+
+h1{
+    font-size: 48px;
+    font-family: 'Noto Serif TC', serif;
+    font-weight: 400;
+}
+h2{
+    font-size: 32px;
+    font-family: 'Noto Serif TC', serif;
+    font-weight: 400;
+}
+h3{
+    font-size: 24px;
+    font-family: 'Noto Serif TC', serif;
+    font-weight: 400;
+}
+h4{
+    font-size: 20px;
+    font-family: 'Noto Serif TC', serif;
+    font-weight: 400;
+}
+h5{
+    font-size: 16px;
+    font-family: 'Noto Serif TC', serif;
+    font-weight: 400;
+}
+h6{
+    font-size: 12px;
+    font-family: 'Noto Serif TC', serif;
+    font-weight: 400;
+}
+
+p{
+    font-size: 16px;
+}
+.text-sm{
+    font-size: 12px;
+}
+
+.text-lg{
+    font-size: 20px;
+}
+.text-xl{
+    font-size: 24px;
+}
+
+
+
+.btn-primary{
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    padding: 10px 0px;
+    background-color: $secondary;
+    color:$primary;
+    border-radius: 4px;
+    transition: all .5s;
+    border: none;
+    font-size: 16px;
+    line-height:inherit;
+
+    &:hover{
+        background-color: $btn-hover;
+    }
+}
+
+// gutter24隔線系統 start
+
+.col-4{
+    width: calc((100% - 48px) /3);
+   
+}
+
+.col-3{
+    width: calc( (100% - 72px) / 4);
+}
+@media (max-width:767px){
+    .col-6-md{
+        width: calc( (100% - 24px) / 2)
+    }
+
+    .col-12-md{
+        width: 100%;
+    }
+}
+// 隔線系統end
+
+.wrap{
+    margin-top: 72px;
+}
+
+input{
+    // 取消ios預設樣式
+    appearance: none;
+}
+input[type="checkbox"]{
+    appearance: checkbox;
+}
+
+input[type="radio"]{
+    appearance: radio;
+}
+

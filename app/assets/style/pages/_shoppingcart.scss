@@ -1,0 +1,166 @@
+.order-title{
+    text-align: center;
+    padding:32px;
+}
+.shopping-main{
+    max-width: 946px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 64px;
+    form{
+        box-shadow: 0 0 12px $black-10;
+        border-radius: 4px;
+    }
+}
+.order{
+    input{
+        &:nth-last-child(4){
+            margin-bottom: 24px;
+        }
+    }
+}
+.input-order{
+    width: 100%;
+    display: block;
+    margin-bottom: 16px;
+
+}
+.label-order{
+    display: block;
+    margin-bottom: 4px;
+    font-size: 12px;
+    color: $black-50;
+
+    span{
+        color:#D71818;
+    }
+}
+.order{
+    width: 58.985201%;
+    padding: 24px;
+   
+    h4{
+        margin-bottom: 16px;
+    }
+}
+.cart{
+    width: 364px;
+    padding: 24px;
+    margin-left: 24px;
+}
+
+.radio-order{
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+    p{
+        color:$black-70;
+    }
+    
+    ul{
+        margin-left: 48px;
+    }
+}
+.radio-list{
+    margin-bottom: 8px;
+}
+.btn-order{
+    width: 170px;
+    float: right;
+}
+.safe{
+    margin-bottom: 24px;
+}
+
+.backToProduct{
+    display: flex;
+    align-items: center;
+
+    a{
+        // 意味後面數來第一個 所以()要有數字
+    &:nth-last-child(1){
+        margin-left: 4px;
+    }
+    }
+}
+.cart-title{
+    padding: 16px 0px;
+}
+.line-cart{
+    height: 1px;
+    width: 100%;
+    background-color:$black-10;
+}
+.cart-item{
+    display: flex;
+    padding: 24px 0px;
+    border-bottom: 1px solid $black-10;
+}
+.cart-item>img{
+    width: 80px;
+}
+.item-main{
+    width: 100%;
+}
+.item-name , .item-price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 12px;
+}
+.item-price{
+    height: 100%;
+}
+.item-name>img{
+    cursor: pointer;
+}
+.number-cart{
+    width: 74px;
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: 1px solid $black-10;
+    background-color: $primary;
+}
+.cost{
+    margin-top: 24px;
+    li{
+        display: flex;
+        justify-content: space-between;
+    }
+    .subTotal{
+        margin-bottom: 16px;
+    }
+    .deliveryFree{
+        padding-bottom: 24px;
+        border-bottom: 1px solid $black-10;
+    }
+    .total{
+        margin-top: 24px;
+    }
+}
+.input-delivery{
+    margin-bottom: 24px;
+}
+
+@media(max-width:767px){
+    .order-title{
+        font-size: 24px;
+    }
+    .shopping-main{
+        flex-direction: column-reverse;
+        form{
+            box-shadow: none;
+        }
+    }
+    .order , .cart{
+        width: 100%;
+    }
+    .cart{
+        margin-left: 0px;
+    }
+    .btn-order{
+        width: 100%;
+    }
+
+}

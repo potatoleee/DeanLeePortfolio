@@ -2,5 +2,14 @@
 @import "./helpers/variables";
 @import "../../../node_modules/bootstrap/scss/bootstrap";
 
+@import "./base/base";
+@import './layout/layout.scss';
 
-@import './layout/index.scss'
+@import './pages/index';
+@import './pages/product';
+@import './pages/product-content';
+@import './pages/login';
+@import './pages/custom';
+@import './pages/faq';
+@import './pages/about';
+@import './pages/shoppingcart';

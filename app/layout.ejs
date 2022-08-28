@@ -7,54 +7,74 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title><%- title %></title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+      <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Noto+Serif+TC:wght@300;400;500&display=swap" rel="stylesheet">
+  <!-- wowjs -->
+  <link rel="stylesheet" href="public/js/WOW-master/css/libs/animate.css">
     <link rel="stylesheet" href="./assets/style/all.css">
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </li>
-          </ul>
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
+      <!-- loading start -->
+   <div class="loading-overlay">
+    <div class="loading-logo">
+      <img src="./assets/images/logo.svg" alt="">
+    </div>
+
+  </div>
+  <!-- loading end -->
+   <!-- header start -->
+    <header >
+      <nav>
+        <div class="topnav container">
+          <div class="btn-buger"></div>
+        <a class="logo"href="index.html">
+          <img src="./assets/images/logo.svg" alt="">
+        </a>
+       <div class="nav-content">
+        <div class="nav-content_main">
+          <a href="about.html">關於iiin</a>
+          <a href="product.html">商品</a>
+          <a href="faq.html">FAQ</a>
+          <a href="custom.html">鐵盒訂製</a>
+          <a href="login.html"><img src="./assets/images/account.svg" alt="" class="icon-account"></a>
+         </div>
+         <a href="shoppingcart.html" class="nav-content_cart"><img src="./assets/images/shopping-cart.svg" alt=""></a>
         </div>
+       
+      </nav>  
+    </header>
+    <!-- header  end-->
+    <!-- main content start -->
+    <main>
+      <%- contents %>
+    </main>
+     <!-- main content end -->
+     <!-- footer start  -->
+     <footer>
+      <div class="container">
+        <ul class="footer-content">
+          <li>
+            <a href="https://www.instagram.com/iiin.cookies/" target="_blank" class="instagram"><img src="./assets/images/icon-ig.svg" alt="">
+              instagram</a>
+            <h6 class="copyright">Copyright © 2022 餅乾生產餡.</h6>
+          </li>
+          <li class="pagetop"><a href="#">page top</a></li>
+        </ul>
       </div>
-    </nav>
-
-    <%- contents %>
-
-    <footer class="footer">
-      footer
     </footer>
+       <!-- footer end  --> 
 
+     <!-- gsap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+  <!-- wow -->
+  <script src="public/js/WOW-master/dist/wow.min.js"></script>
+  <!-- bs js -->
     <script src="./assets/js/vendors.js"></script>
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="./assets/js/all.js"></script>
   </body>
 

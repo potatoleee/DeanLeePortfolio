@@ -1,0 +1,126 @@
+
+---
+title: 購物車 餅乾生產餡
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+
+  <div class="wrap container">
+  <h2 class="order-title">結帳吃餅乾</h2>
+<div class="shopping-main">
+  <form class="order">
+    <h4>訂單資訊</h4>
+    <label class="label-order"for="name">姓名<span>*</span></label>
+    <input class="input-primary input-order " type="text" name="name" id="order" placeholder="例:李餅乾">
+
+    <label class="label-order" for="phone">聯絡電話<span>*</span></label>
+    <input class="input-primary input-order"type="phone" name="phone" id="order" placeholder="例:0912-333-456">
+
+    <label class="label-order" for="email">電子郵件<span>*</span></label>
+    <input class="input-primary input-order"type="email" name="name" id="order"  placeholder="例:iiincookie@gmail.com">
+
+    <label class="label-order" for="address">寄送地址<span>*</span></label>
+    <input class="input-primary input-order input-delivery" type="text" name="address" id="order"  placeholder="例:台中市台灣大道一段999號">
+    <!-- 訂單資訊上半 -->
+     <!-- 運送方式 start-->
+     <div class="radio-order">
+     <p>運送方式</p>
+    <ul >
+      <li class="radio-list">  
+        <input type="radio" name="delivery" id="selfPick">
+        <label for="selfPick">自行取貨</label>
+      </li>
+    
+      <li>  
+        <input type="radio" name="delivery" id="homeDelivery" checked>
+        <label for="honeDelivery">宅配 NT$130 </label>
+      </li>
+    </ul>
+  </div>
+    <!--運送方式 end-->
+    <!-- 付款方式 start-->
+    <div class="radio-order">
+      <p>付款方式</p>
+     <ul >
+       <li  class="radio-list" >  
+         <input type="radio" name="pay" id="credit" checked>
+         <label for="credit">信用卡</label>
+       </li>
+     
+       <li>  
+         <input type="radio" name="pay" id="atm" >
+         <label for="atm">ATM/網銀匯款</label>
+       </li>
+     </ul>
+   </div>
+      <!-- 付款方式 end-->
+
+    <p class="safe">下一步將連至第三方金流服務進行刷卡，你所有的交易資訊皆獲得安全保護。</p>
+    <button type="submit" class="btn-primary btn-order">付款</button>
+  </form>
+
+  <!-- 購物車start -->
+  <form class="cart">
+    <div class="backToProduct">
+      <a href="product.html"><img src="public/images/icon-arrow.svg" alt=""></a>
+      <a href="product.html">還有想購買的物品嗎？</a>
+    </div>
+    
+    <h4 class="cart-title">購物車</h4>
+    <div class="line-cart"></div>
+    <!-- 購物車產品區start -->
+    <ul class="cart-list">
+      <li class="cart-item">
+        <img src="public/images/rectangel/choclate.jpg" alt="">
+        <div class="item-main">
+            <div class="item-name">
+                <p>伯爵巧克力夾餡(六入)</p>
+                <img src="public/images/icon-close.svg" alt="">
+            </div>
+            <div class="item-price">
+                <p>NT$350</p>
+                <input class="number-cart" type="number" value="1" >
+            </div>
+        </div>
+      </li>
+     
+      <li class="cart-item">
+        <img src="public/images/rectangel/lightwood正方形.jpg" alt="">
+        <div class="item-main">
+            <div class="item-name">
+                <p>中型鐵盒餅乾</p>
+                <img src="public/images/icon-close.svg" alt="">
+            </div>
+            <div class="item-price">
+                <p>NT$350</p>
+                <input class="number-cart" type="number"  value="1" >
+            </div>
+        </div>
+      </li>
+      
+      
+    </ul>
+         <!-- 購物車產品區 end -->
+    
+    <ul class="cost">
+      <li class="subTotal">
+        <p>小計</p>
+        <p>NT$700</p>
+      </li>
+      <li class="deliveryFree">
+        <p>運費</p>
+        <p>NT$130</p>
+      </li>
+      <li class="total">
+        <p>總計</p>
+        <p>NT$830</p>
+      </li>
+    </ul>
+
+  
+
+  </form>
+
+</div>
+</div>
