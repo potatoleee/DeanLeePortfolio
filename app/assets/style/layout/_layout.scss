@@ -4,7 +4,7 @@
             top: 0;
             width: 100vw;
             height: 100vh;
-            background-color: $primary;
+            background-color: $light;
             z-index: 999;
             display: flex;
             justify-content: center;
@@ -43,32 +43,42 @@ header{
     z-index:99;
     
 }
-nav{
-    background-color: $primary;
-    //  position: fixed;
-    // top:0;
-    // width: 100%;
-    // z-index: 2;
+
    
-
-
-  
-.topnav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.logo{
+    a{
+        display: block;
+        width: 190px;
+        height: 32px;
+        background-image: url("../images/logo.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+        text-decoration: none;
+        overflow: hidden;
+        text-indent: 101%;
+        white-space: nowrap;
+        @include phone{
+            width: 127.41px;
+            height: 24px;
+        }
+    }
 }
 
 // 漢堡start
-.btn-buger{
+.btn-burger{
     display: none;
     position: relative;
     width: 24px;
     height: 24px;
+    z-index: 1030;
     cursor: pointer;
+    @include phone{
+        display: block;
+    }
     
   }
-  .btn-buger::before{
+  .btn-burger::before{
     position: absolute;
     content:"";
     width: 20px;
@@ -78,7 +88,7 @@ nav{
     right: 2px;
     transition: all .5s;
   }
-  .btn-buger::after{
+  .btn-burger::after{
     position: absolute;
     content:"";
     width: 20px;
@@ -90,157 +100,85 @@ nav{
     
   }
 //   絕對定位調整置中
-  .btn-buger.open::before,
-  .btn-buger.open::after {
+  .btn-burger.open::before,
+  .btn-burger.open::after {
     top: 50%;
     transform: translateY(-50%);
   }
-  .btn-buger.open::before {
+  .btn-burger.open::before {
     transform: rotate(45deg);
   }
-  .btn-buger.open::after {
+  .btn-burger.open::after {
     transform: rotate(-45deg);
   }
   // 漢堡end
 
-    .nav-content{
-        width: 389px;
-        justify-content: space-between;
-        display: flex;
+    .nav__content{
         a{
-            margin: 20px 0px;
-            padding: 4px 0px;
-            color:$black-100;
+            
+            color:$dark;
             transition: all .5s;
             position: relative;
             &::after{
                 position: absolute;
                 content: "";
-                bottom: 0;
+                bottom: 20px;
                 left: 0;
                 right: 0;
                 width: 0%;
                 margin: auto;
                 color:transparent;
-                background:black;
-                height: 1px;
+                background:$brand-color;
+                height: 2px;
+                transition: all .5s;
+            }
+            &:hover{
+                color:$brand-color;
+                &::after{
+                    width: 100%;
+                }
             }
         }
-
-        .nav-content_main{
-            display: flex;
-            width: 333px;
-            justify-content: space-between;
-           
-           
-        }
-    }
-}
-.nav-content a:hover{
-    color:$brand-color;
-}
-.nav-content a:after{
-    transition: all .5s;
-}
-.nav-content a:hover::after{
-    width: 100%;
-}
-
-@media(max-width:767px){
-    
-        .logo{
-            z-index: 4;
-          
-            img{
-                width: 127.41px;
-             }
-        }
-        nav{
-            .btn-buger{
-                display: block;
-                z-index: 4;
-            }
-            .logo{
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%,-50%),;
-            }
-        .nav-content{
-            justify-content: flex-end;
-            
-            .nav-content_main{
-                flex-direction: column;
-                justify-content: space-evenly;
-              height: 0px;
-              overflow: hidden;
-              position: fixed;
-              top: 0;
-              right:0;
-              left: 0;
-              bottom: 0;
-              text-align: center;
-              width: 100%;
-              background-color:$primary;
-              z-index: 3;
-
-
-              .icon-account{
-                margin: 0 auto;
+        &__main{
+            @include phone{
+                background: transparent;
+                opacity: 0;
+                transition: all .5s;
+              &.open{
+                  opacity: 1;
+                  background:$light;
               }
-              
             }
-            .nav-content_cart{
-                z-index: 4;
-              }
-            // !! 這個不能包在nav-content_main裡面
-            .nav-content_main.open{
-                height: 100vh;
-              }
+            a{
+                @include phone{
+                    display: none;
 
-        
+                     &.open{
+                         display: block;
+                    }
+                }
+            }
         }
-    }
-  
-    .nav-content_main{
-        // 要多寫一個a找的到！
-        a{
-        &:nth-child(1){
-            margin-top: 80px;
-        }
-        &:nth-child(5){
-            margin-bottom: 80px;
-        }
-        } 
-    }
-    
 
-}  
+    }
+
+
+
+
+ 
 
 
 // footer start
 footer{
-    background-color: $secondary;
+    background-color: $primary;
 }
 
 .footer-content{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    color:$primary;
 
-    li{
-        padding-top:44px;
-        padding-bottom: 24px;
-    }
 
     .pagetop{
-        position: relative;
         padding-right: 9px;
-        a{
-            color:$primary;
-            font-family:  'Noto Serif TC', serif;
-            font-weight: 300;
+
             transition: all .5s;
             &:hover{
                 color:$hover-color;
@@ -252,37 +190,17 @@ footer{
             &::before{
                 position: absolute;
                 content: "";
-                height: 80px;
+                height: 64px;
                 width: 1px;
-                top:-10px;
+                bottom: 0;
                 right: 0px;
-                background-color:$primary;
+                background-color:$light;
                 transition: all .5s;
             }
-        }
 
       
     }
 }
-.instagram{
-    display: flex;
-    font-size: 12px;
-    align-items: center;
-    font-family:  'Noto Serif TC', serif;
-    font-weight: 300;
-    padding-bottom: 24px;
-    color:$primary;
 
-    img{
-        margin-right: 16px;
-        color:$primary;
-        font-weight: 300;
-    }
-    
-}
-.copyright{
-    font-size: 12px;
-    font-family:  'Noto Serif TC', serif;
-    font-weight: 300;
-}
+
 // footer end
