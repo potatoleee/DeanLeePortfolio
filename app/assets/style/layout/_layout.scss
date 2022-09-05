@@ -140,12 +140,14 @@ header{
             }
         }
         &__main{
-            
+            display: flex;
             @include phone{
+                display: none;
                 background: transparent;
                 opacity: 0;
                 transition: all .5s;
               &.open{
+                 display: flex;
                   opacity: 1;
                   background:$light;
               }

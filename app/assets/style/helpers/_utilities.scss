@@ -63,6 +63,7 @@ $utilities: map-merge(
       map-get($utilities,"font-size"),
       (
         responsive: true,
+        rfs: false,
         
       )
     ),
@@ -209,7 +210,10 @@ $utilities: map-merge(
               responsive: true,
               property: letter-spacing,
               class: letterSpace,
-              values:(
+              values:( 
+                2:  2px,
+                4:  4px,
+                8:  8px,
                 12: 12px,
                 16: 16px,
                 24: 24px,
@@ -217,6 +221,41 @@ $utilities: map-merge(
                 ) 
                 
             ),
+            "writing-mode": (
+              responsive: true,
+              property: writing-mode,
+              class: writing,
+              values:(
+                rl: vertical-rl,
+                lr: vertical-lr,
+                ) 
+                
+            ),
+            "line-height": (
+              responsive: true,
+      property: line-height,
+      class: lh,
+      values: (
+        1: 1,
+        sm: $line-height-sm,
+        base: $line-height-base,
+        lg: $line-height-lg,
+        2:   2,
+        2h:  2.5,
+        3:   3,
+
+      )
+    ),
+    "text-indent": (
+      responsive: true,
+      property: text-indent,
+      class: text-indent,
+      values:(
+          2: 0.2em,
+          3: 0.3em,
+        ) 
+        
+    ),
           
       
    

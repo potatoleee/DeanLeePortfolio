@@ -19,104 +19,48 @@
 
 
 
-.intro{
-  margin-top: 100px;
-  margin-bottom: 100px;
+.flavor{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 
-  .orign{
-      display: flex;
-      align-items: center;
-  
-  .orign-text{
-      width: 240px;
-      margin-left:121px;
-      
-      h4{
-          margin-bottom: 32px;
-      }
-  }
-      img{
-          width: 57%;
-      }
-  }
-  .orign{
-      margin-bottom: 32px;
+    &__1{
 
-      .orign-title{
-          position: relative;
-          margin-left: 64px;
-          
-
-          &::before{
-              position: absolute;
-              content: "";
-              height: 1px;
-              width: 56px;
-              background-color:$black-100;
-              top:calc(50% + 0.1rem);
-              left:-65px;
-          }
-      }
-  }
-  .package{
-      display: flex;
-      flex-direction: row-reverse;
-      align-items: center;
-      img{
-          width: 57%;
-      }
-      .package-text{
-          width: 240px;
-          margin-right: 121px;
-
-          .package-title{
-              margin-bottom: 32px;
-              margin-left: 64px;
-              position: relative;
-             
-
-              &::before{
-                  position: absolute;
-                  content: "";
-                  height: 1px;
-                  width: 56px;
-                  background-color:$black-100;
-                  top:calc(50% + 0.1rem);
-                  left:-65px;
-                  
-              }
-          }
-
-      }
-  }
+        background-image: url(../images/rectangel/choclate.jpg);
+    }
 }
-
-@media(max-width:767px){
-  .intro{
-      margin: 64px 0px;
-  .orign , .package{
-      flex-direction: column-reverse;
-
-      img{
-          width: 100%;
-      }
-      .orign-text {
-          width: 100%;
-          margin-left:0px;
-          margin-bottom: 24px;
-      }
-  }
-  .package{
-      .package-text{
-          width: 100%;
-          margin-right:0px;
-          margin-bottom: 24px;
-      }
-  }
+ 
+.mask{
+    position: relative;
+    
+    &::before{
+        position: absolute;
+        content: "more detail";
+        color: $light;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background:$dark;
+        opacity: 0;
+        transition: all .4s;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        font-family: 'Noto Serif TC', serif;
+        letter-spacing: 4px;
+    }
+    &:hover{
+        &::before{
+        background:$mask-hover;
+        opacity: 0.7;
+        letter-spacing: 2px;
+        }
+    }
 }
 
 
-}
+
 .cookie{
   background-color: $secondary;
   .cookie-title{

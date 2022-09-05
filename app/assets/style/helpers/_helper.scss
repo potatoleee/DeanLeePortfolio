@@ -13,6 +13,23 @@
     }
 }
 
-.writing-vertical{
-    writing-mode: vertical-lr;
+// 照片辨正方型外框
+.wrap-square{
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%;
+    overflow: hidden;
+}
+// 照片辨正方型照片
+.square-img{
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% ,-50%);
+}
+
+.pointer-event-none{
+    pointer-events: none;/* 穿透上層 icon 以點擊下方按鈕 */
 }
