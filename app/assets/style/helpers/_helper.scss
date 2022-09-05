@@ -33,3 +33,24 @@
 .pointer-event-none{
     pointer-events: none;/* 穿透上層 icon 以點擊下方按鈕 */
 }
+
+.more-deco{
+    position: relative;
+    &::after{
+        position: absolute;
+        content: "";
+        height: 1px;
+        width: 34px;
+        background-color: $dark;
+        top:52%;
+        right: 0;
+        transition: all .5s;
+      
+    }
+    &:hover{
+        &::after{
+            background-color: $primary;
+            width: 0;
+        }
+    }
+}

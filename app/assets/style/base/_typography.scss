@@ -2,3 +2,10 @@
 .font-serifTc{
     font-family: 'Noto Serif TC', serif;
 }
+
+.text-dark-hover{
+    color: $dark;
+    &:hover{
+        color:$brand-color;
+    }
+}

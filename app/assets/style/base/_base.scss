@@ -29,9 +29,16 @@ body{
 
 a{
     text-decoration: none;
-    color:$black-100;
-   
+    color: inherit;
+    display: block;
 }     
+// a{  
+//     display: block;
+//     color: inherit;
+//     &:hover{
+//         color: inherit;
+//     }
+// }
 
 img{
     max-width: 100%;

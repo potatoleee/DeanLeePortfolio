@@ -15,12 +15,12 @@ $utilities: map-merge(
         )
       ),
      
-      // "z-index": (
-      //   property: z-index,
-      //   responsive: true,
-      //   class: z,
-      //   values: $zindex,
-      // ),
+      "z-index": (
+        property: z-index,
+        responsive: true,
+        class: z,
+        values: $zindex-values,
+      ),
       "translate-middle": (
         property: transform,
         class: translate-middle,
@@ -224,7 +224,7 @@ $utilities: map-merge(
             "writing-mode": (
               responsive: true,
               property: writing-mode,
-              class: writing,
+              class: vertical,
               values:(
                 rl: vertical-rl,
                 lr: vertical-lr,

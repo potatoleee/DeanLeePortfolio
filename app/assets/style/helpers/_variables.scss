@@ -305,6 +305,7 @@ $negative-spacers: if($enable-negative-margins, negativify-map($spacers), null) 
 // scss-docs-start position-map
 $position-values: (
   0: 0,
+  m48: -48px,
   12p: 12%,
   20p: 20%,
   24p: 24%,
@@ -323,7 +324,13 @@ $position-values: (
   94: 94px,
 ) !default;
 // scss-docs-end position-map
-
+$zindex-values:(
+  1: 1,
+  2: 2,
+  3: 3,
+  4: 4,
+  5: 5,
+)!default;
 // Body
 //
 // Settings for the `<body>` element.

@@ -5,7 +5,7 @@
             width: 100vw;
             height: 100vh;
             background-color: $light;
-            z-index: 999;
+            z-index: 2000;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -147,7 +147,7 @@ header{
                 opacity: 0;
                 transition: all .5s;
               &.open{
-                 display: flex;
+                    display: flex;
                   opacity: 1;
                   background:$light;
               }
