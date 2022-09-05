@@ -5,3 +5,14 @@
 .cursor-pointer{
     cursor: pointer;
 }
+
+.light-hover {
+    color:$light;
+    &:hover{
+        color:$hover-color;
+    }
+}
+
+.writing-vertical{
+    writing-mode: vertical-lr;
+}

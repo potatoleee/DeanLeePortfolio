@@ -140,6 +140,7 @@ header{
             }
         }
         &__main{
+            
             @include phone{
                 background: transparent;
                 opacity: 0;
@@ -177,26 +178,26 @@ footer{
 
 
     .pagetop{
-        padding-right: 9px;
 
+        &::before{
+            position: absolute;
+            content: "";
+            height: 64px;
+            width: 1px;
+            bottom: 0;
+            right: 0px;
+            background-color:$light;
             transition: all .5s;
-            &:hover{
-                color:$hover-color;
+        }
+     
+        &:hover{
 
-                &::before{
-                    background-color: $hover-color;
-                }
-            }
             &::before{
-                position: absolute;
-                content: "";
-                height: 64px;
-                width: 1px;
-                bottom: 0;
-                right: 0px;
-                background-color:$light;
-                transition: all .5s;
-            }
+                    background-color: $hover-color;
+                    height: 4px;
+                }
+        }
+        
 
       
     }

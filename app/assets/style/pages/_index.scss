@@ -1,77 +1,23 @@
 
 .banner{
   // 993/1400 讓他等比例縮小
-padding-bottom: 66.67%;
+// padding-bottom: 66.67%;
  margin-top: 72px;
  background-image: url("../images/newbanner.jpg");
- background-size: 100%;
+ background-size: cover;
+ height: 100vh;
  background-repeat: no-repeat;
  position: relative;
+ background-position: center;
+ &__text{
+    padding-top: 130px;
+ }
 }
 
 
-.banner-text{
-  writing-mode: vertical-lr;
-  color:$primary;
-  position: absolute;
-  top:25%;
-  right:12%;
 
-  .banner-text_title{
-      letter-spacing: 20px;
-      padding-right:30px;
-  }
 
-  .banner-text_content{
-      padding-top: 180px;
-      letter-spacing: 15px;
-  }
-}
-@media(max-width:992px){
-  
-  .banner-text{
 
-      .banner-text_title{
-          font-size: 32px;
-      }
-      .banner-text_content{
-          padding-top: 100px;
-      }
-  }
-}
-@media (max-width:767px){
-  .banner{
-      .banner-text{
-          .banner-text_title{
-              font-size: 20px;
-              padding-right: 10px;
-
-          }
-      .banner-text_content{
-          padding-top: 35px;
-          font-size: 12px;
-      }
-  }
-  }
-}
-@media(max-width:576px){
-  .banner{
-      .banner-text{
-          top:20%;
-          right:10%;
-
-          .banner-text_title{
-             letter-spacing:10px;
-
-          }
-      .banner-text_content{
-          
-          letter-spacing: 6px;
-      }
-  }
-  }
-  
-}
 
 .intro{
   margin-top: 100px;

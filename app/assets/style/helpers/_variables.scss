@@ -304,6 +304,9 @@ $negative-spacers: if($enable-negative-margins, negativify-map($spacers), null) 
 // scss-docs-start position-map
 $position-values: (
   0: 0,
+  12p: 12%,
+  20p: 20%,
+  24p: 24%,
   50: 50%,
   100: 100%,
   4: 4px,

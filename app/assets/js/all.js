@@ -11,8 +11,8 @@ $(document).ready(function(){
 
 
 // scoll top
-    $('.pagetop').click(function(){
-        $('html,body').animate({scrollTop:0 },1000);
+    $('.pagetop').on('click',function(){
+        $('html,body').animate({scrollTop:0 });
  });// scoll end
 
 //  漢堡選單 start
