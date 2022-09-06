@@ -44,6 +44,13 @@ $('.faq-list_title').click(function(e){
 
 })
 
+$('#btn__login--base').on('click',function(){
+    $('.login__success').addClass('open');
+    $('.login__default').addClass('open');
+
+
+})
+
 
 
 

@@ -1,113 +1,13 @@
 
-
-.product-content_wrapper{
-
-    max-width: 978px;
-    padding: 0px 16px;
-    margin: 0 auto;
-    margin-top: 72px;
-   
-}
-.bread{
-    padding-top: 56px;
-    padding-bottom: 40px;
-    color:$black-30;
-    a{
-        color:$black-70;
-        letter-spacing: 2px;
-    }
-}
-.product-content{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 80px;
-    
-}
-
-
-.sub-product{
-    display: flex;
-
-    //不能加這個，不然到第六個會變分開的 justify-content: space-between;
-    flex-wrap: wrap;
-
-    li{
-        width: calc((100% - (24px * 4)) / 5 );
-        margin-right:24px;
-        margin-bottom: 16px;
+// 邊框特效 start
+.product__img__sub{
        
-        &:nth-child(5n){
-            margin-right: 0;
-        }
         img{
-            margin-bottom: 0px;
-            border:2px solid $primary;
+            border:2px solid transparent;
+            transition: all .5s;
+            &.active{
+                border: 2px solid $primary;
+            }
         }
-    } 
 }
-.sub-product>li>img.active{
-    border: 2px solid $secondary;
-}
-.product-info{
-    width: 38.4%;
-    
-    h3,p{
-        margin-bottom: 16px;
-    }
-    h3{
-        letter-spacing: 2px;
-    }
-    .delivery{
-        padding-top: 32px;
-    }
-    .add-cart{
-        position: relative;
-        display: flex;;
-        margin-top: 24px;
-        margin-bottom: 32px;
-        
-
-        &::after{
-            position: absolute;
-            content: "";
-            width: 170px;
-            height: 1px;
-            top:76px;
-            background-color:$black-30;
-        }
-
-   .btn-number{
-    padding: 10px 16px;
-    padding-right: 8px;
-    width: 73px;
-    margin-right: 24px;
-    background-color: $primary;
-    border-radius: 4px;
-    
-      
-   }
-   .btn-primary{
-    width: 267px;
-   }   
-}
-}
-
-@media(max-width:767px){
-    .product-content{
-        flex-direction: column;
-    }
-    .product-img{
-        width: 100%;
-    }
-
-    .sub-product{
-        li{
-           width: calc((100% - (16px * 4)) / 5 ); ;
-           margin-right:16px;
-        }
-    }
-    .product-info{
-        width: 100%;
-    }
-    
-}
+// 邊框特效 end

@@ -90,6 +90,7 @@ $brand-color:#492E24;
 $custom-bg:#C0B3A2;
 $btn-hover:#8C9B8F;
 $mask-hover:rgb(28, 28, 28);
+$fb: #3B5998;
 
 
 // scss-docs-end theme-color-variables
@@ -116,6 +117,7 @@ $theme-colors: (
   "brand-color": $brand-color,
   "custom-bg":  $custom-bg,
   "btn-hover": $btn-hover,
+  "fb":       $fb,
   
 ) !default;
 // scss-docs-end theme-colors-map
