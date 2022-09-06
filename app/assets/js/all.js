@@ -24,8 +24,8 @@ $(document).ready(function(){
     })//  漢堡選單 end
 
 //點小圖換大圖 start
-$('.sub-product img').click(function(e){
-$('.main-product ').attr('src',$(this).attr('src'));
+$('.product__img__sub img').click(function(e){
+$('.product__img__main ').attr('src',$(this).attr('src'));
 $(this).addClass('active');
 $(this).parent().siblings().find('img').removeClass('active');
 })
