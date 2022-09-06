@@ -68,13 +68,14 @@ $colors: (
 // scss-docs-end colors-map
 
 // scss-docs-start theme-color-variables
-$primary:        #738673; // $blue !default;
+$primary:        #68715F; // $blue !default;
 $secondary:     #C0B3A2;//$gray-600 !default;
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
 $danger:        $red !default;
 $light:         #F0F0F0;//$gray-100 !default;
+$light-gray:    #e3e3e3;
 $dark:         #161A14;// $gray-900 !default;
 $black-100:    #161A14;
 $black-90:rgba(22, 26, 20, 0.9);
@@ -102,6 +103,7 @@ $theme-colors: (
   "warning":    $warning,
   "danger":     $danger,
   "light":      $light,
+  "light-gray": $light-gray,
   "dark":       $dark,
   "black-100":  $black-100,
   "black-90":   $black-90,
@@ -114,6 +116,7 @@ $theme-colors: (
   "brand-color": $brand-color,
   "custom-bg":  $custom-bg,
   "btn-hover": $btn-hover,
+  
 ) !default;
 // scss-docs-end theme-colors-map
 
