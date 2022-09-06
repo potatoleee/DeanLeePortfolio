@@ -12,6 +12,7 @@ body {
 main{
         flex-grow: 1; /*可佔滿垂直剩餘的空間*/
         background-color: $body-bg;
+        margin-top: 72px;
 }
 // 使footer置底 end
 
@@ -48,6 +49,7 @@ img{
 
 h1, h2, h3, h4, h5, h6,ul,ol,p{
     margin: 0;
+    line-height: 1.2;
 }
 
 ol, ul {
@@ -62,23 +64,23 @@ ol, ul {
 
 
 
-.btn-primary{
-    cursor: pointer;
-    display: block;
-    text-align: center;
-    padding: 10px 0px;
-    background-color: $secondary;
-    color:$primary;
-    border-radius: 4px;
-    transition: all .5s;
-    border: none;
-    font-size: 16px;
-    line-height:inherit;
+// .btn-primary{
+//     cursor: pointer;
+//     display: block;
+//     text-align: center;
+//     padding: 10px 0px;
+//     background-color: $secondary;
+//     color:$primary;
+//     border-radius: 4px;
+//     transition: all .5s;
+//     border: none;
+//     font-size: 16px;
+//     line-height:inherit;
 
-    &:hover{
-        background-color: $btn-hover;
-    }
-}
+//     &:hover{
+//         background-color: $btn-hover;
+//     }
+// }
 
 
 
