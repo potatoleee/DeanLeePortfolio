@@ -1,0 +1,147 @@
+//swiper
+.share{
+    height: 733px;
+    background-color: $light-gray;
+    @include pad{
+      height: auto;
+    }
+  }
+  
+.swiper {
+    width: 100%;
+    height: 429px;
+    @include pad{
+      height: auto;
+    }
+    &-img{
+  
+      position:absolute;
+      width: 61%;
+      top: 0;
+      left: 0;
+      @include pad{
+        position: relative;
+        width: 100%;
+        height: 240px;
+        margin-bottom: 88px;
+      }
+      @include phone{
+        height: 213px;
+      }
+        img{
+          width: 100%; 
+          margin-left: 8px;
+          object-fit:cover;
+          @include pad{
+            height: 100%;
+            width: calc( 100% - 8px );
+          }
+        }
+        &::before{
+          position: absolute;
+          content: "";
+          width: 100%;
+          height: 100%;
+          border: 1px solid $primary;
+          top: 8px;
+          left: 0;
+          border-radius: 4px;
+          z-index: -1;
+        }
+        
+    }
+    .share__card{
+      width: 48.5981%;
+      color:$dark;
+      position: absolute;
+      right: 0;
+      bottom: 24px;
+      padding: 32px;
+      border-radius: 0px 12px 12px 12px;
+      border: 1px solid $primary;
+      @include pad{
+        position: relative;
+        width: 100%;
+      }
+      &__img{
+          object-fit: cover;
+          width: 100px;
+          height: 100px;
+          border-radius: 50%;
+          position: absolute;
+          right: 32px;
+          top:-64px;
+    
+          @include pad{
+            width: 80px;
+            height: 80px;
+            top:-40px;
+          }
+    
+      }
+    }
+    .swiper-button{
+      position: absolute;
+      bottom: 24px;
+      left: 17%;
+      align-items: center;
+      @include pad{
+        position: initial;
+        justify-content: center;
+        margin-top: 20px;
+      }
+      
+      .swiper-button-next, .swiper-button-prev{
+        position: initial;
+        margin-top: 0;
+        font-size: 32px;
+        color:$primary;
+        height: 24px;
+        width: 24px;
+        // 原本的箭頭是用偽元素 content: 'next' 這個是swiper icon，所以用空白把他刪除
+        &::after{
+            content: "";
+        }
+      }
+      &-prev{
+        margin-right: 16px;
+      }
+      &-next{
+        margin-left: 16px;
+      }
+    }
+    .swiper-pagination{
+      position: initial;
+      display: flex;
+      // 原本width為100%
+      align-items: center;
+      width: auto;
+      
+    }
+    
+    
+  }
+  
+  // 更改頁籤點點default的樣式
+  .swiper-pagination-bullet {
+    width: 8px;
+    height: 4px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 12px;
+    opacity: 1;
+    background: $primary;
+    border-radius: 0px;
+    transition: all .4s;
+    
+  }
+  // 更改頁籤點點active的樣式
+  .swiper-pagination-bullet-active {
+    
+    background: $primary;
+    width: 16px;
+    height: 4px;
+  }
+  
+  
+  //swiper
