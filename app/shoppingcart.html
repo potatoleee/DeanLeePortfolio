@@ -1,11 +1,11 @@
 ---
-title:  鐵盒餅乾 商品內頁 餅乾生產餡
+title:  購物車  餅乾生產餡
 layout: ./app/layout.ejs
 engine: ejs
 current: shpooingcart
 ---
 <div class="container my-md-10 my-8">
-
+  <!-- 進度條start -->
   <div class="my-6 ">
     <div class="row justify-content-center">
         <!-- 中間灰線 -->
@@ -31,7 +31,8 @@ current: shpooingcart
         </div>
     </div>
   </div>
-  <h2 class="font-serifTc fs-3 fs-md-2 text-center mb-8">結帳吃餅乾</h2>
+  <!-- 進度條 end -->
+  <h2 class="font-serifTc fs-3 fs-md-2 text-center mb-8 letterSpace-4">結帳吃餅乾</h2>
   <div class="row flex-column-reverse flex-lg-row">
     <!-- 訂單資訊 start-->
     <div class="col-lg-6 offset-lg-1">
@@ -101,13 +102,13 @@ current: shpooingcart
           <!-- 付款方式 end -->
           <p class="mb-6">下一步將連至第三方金流服務進行刷卡，你所有的交易資訊皆獲得安全保護。</p>
           <div class="d-flex justify-content-end">
-            <a href="#" class="btn btn-primary py-2 px-9">信用卡付款</a>
+            <a href="order-pay.html" class="btn btn-primary py-2 px-9">信用卡付款</a>
           </div>
       </form>
     </div>
     <!-- 訂單資訊 start-->
     <!-- 購物車 start -->
-    <div class="col-lg-5 mb-6 mb-lg-0">
+    <div class="col-lg-4 mb-6 mb-lg-0">
       <div class="p-lg-6   shadow-lg-sm rounded-2  border-lg">
         <a class="d-flex gap-1 align-items-center mb-4" href="product.html">
           <span class="material-symbols-outlined">
@@ -124,10 +125,10 @@ current: shpooingcart
         <div class="d-flex py-6 gap-3 border-bottom border-black-10 ">
           <img class="w-20n" src="./assets/images/rectangel/choclate.jpg" alt="">
           <div class="w-100 d-flex flex-column justify-content-between">
-            <div class="d-flex justify-content-between align-items-center">
+            <div class="d-flex justify-content-between align-items-start">
               <p>伯爵巧克力夾餡(六入)
               </p>
-              <span class="material-symbols-outlined fs-2">
+              <span class="material-symbols-outlined ">
                 close
                 </span>
             </div>
@@ -142,10 +143,10 @@ current: shpooingcart
          <div class="d-flex py-6 gap-3 border-bottom border-black-10 mb-6 ">
           <img class="w-20n" src="./assets/images/rectangel/lightwood正方形.jpg" alt="">
           <div class="w-100 d-flex flex-column justify-content-between">
-            <div class="d-flex justify-content-between align-items-center">
+            <div class="d-flex justify-content-between align-items-start">
               <p>鐵盒禮盒
               </p>
-              <span class="material-symbols-outlined fs-2">
+              <span class="material-symbols-outlined ">
                 close
                 </span>
             </div>
