@@ -158,6 +158,8 @@ $utilities: map-merge(
                   17n: 68px,
                   20n: 80px,
                   22n: 88px,
+                  80n: 320px,
+                  20: 20%,
                   30: 30%,
                   35: 35%,
                   40: 40%,
@@ -171,6 +173,7 @@ $utilities: map-merge(
                   90: 90%,
                   95: 95%,
                   100: 100%,
+                  
                   auto: auto
                 ),
               )

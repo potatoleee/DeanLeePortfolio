@@ -62,8 +62,8 @@ $(window).resize(function(){
 
 function gsapAnimate(){
      if( $(window).width() >= 768 ){
-         $(window).scroll(function(){
-             offsetTop = $(window).scrollTop();
+         $(window).on('scroll',function(){
+             offsetTop = $(window).scrollTop()
              // console.log(offsetTop/10)
              //x:“偏移”,“時間：數字越大呈現時間越久"
              gsap.to(".about-text", { y:-offsetTop/5, duration: 1})
