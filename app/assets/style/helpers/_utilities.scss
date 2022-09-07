@@ -156,6 +156,7 @@ $utilities: map-merge(
                   10n :40px,
                   12n: 48px,
                   17n: 68px,
+                  20n: 80px,
                   22n: 88px,
                   30: 30%,
                   35: 35%,
@@ -333,6 +334,25 @@ $utilities: map-merge(
         circle: 50%,
         pill: $border-radius-pill
 
+      )
+    ),
+    "border": (
+      property: border,
+      responsive: true,
+      values: (
+        null: $border-width solid $border-color,
+        0: 0,
+      )
+    ),
+    "shadow": (
+      property: box-shadow,
+      class: shadow,
+      responsive: true,
+      values: (
+        null: $box-shadow,
+        sm: $box-shadow-sm,
+        lg: $box-shadow-lg,
+        none: none,
       )
     ),
           

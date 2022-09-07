@@ -2,11 +2,11 @@
 title:  鐵盒餅乾 商品內頁 餅乾生產餡
 layout: ./app/layout.ejs
 engine: ejs
-current: index
+current: shpooingcart
 ---
-<div class="container">
+<div class="container my-md-10 my-8">
 
-  <div class="py-4  pb-lg-3 ">
+  <div class="my-6 ">
     <div class="row justify-content-center">
         <!-- 中間灰線 -->
         <div class="col-9 col-md-7 timeLine ">
@@ -31,124 +31,154 @@ current: index
         </div>
     </div>
   </div>
-  <h2 class="font-serifTc fs-3 fs-md-2 text-center">結帳吃餅乾</h2>
-</div>
-
-<div class="wrap container">
-    <h2 class="order-title">結帳吃餅乾</h2>
-  <div class="shopping-main">
-    <form class="order">
-      <h4>訂單資訊</h4>
-      <label class="label-order"for="name">姓名<span>*</span></label>
-      <input class="input-primary input-order " type="text" name="name" id="order" placeholder="例:李餅乾">
-
-      <label class="label-order" for="phone">聯絡電話<span>*</span></label>
-      <input class="input-primary input-order"type="phone" name="phone" id="order" placeholder="例:0912-333-456">
-
-      <label class="label-order" for="email">電子郵件<span>*</span></label>
-      <input class="input-primary input-order"type="email" name="name" id="order"  placeholder="例:iiincookie@gmail.com">
-
-      <label class="label-order" for="address">寄送地址<span>*</span></label>
-      <input class="input-primary input-order input-delivery" type="text" name="address" id="order"  placeholder="例:台中市台灣大道一段999號">
-      <!-- 訂單資訊上半 -->
-       <!-- 運送方式 start-->
-       <div class="radio-order">
-       <p>運送方式</p>
-      <ul >
-        <li class="radio-list">  
-          <input type="radio" name="delivery" id="selfPick">
-          <label for="selfPick">自行取貨</label>
-        </li>
-      
-        <li>  
-          <input type="radio" name="delivery" id="homeDelivery" checked>
-          <label for="honeDelivery">宅配 NT$130 </label>
-        </li>
-      </ul>
+  <h2 class="font-serifTc fs-3 fs-md-2 text-center mb-8">結帳吃餅乾</h2>
+  <div class="row flex-column-reverse flex-lg-row">
+    <!-- 訂單資訊 start-->
+    <div class="col-lg-6 offset-lg-1">
+      <form class="  shadow-lg-sm p-lg-6 rounded-2 border-lg">
+        <h3 class="fs-4 font-serifTc mb-4">訂單資訊</h3>
+        <!-- 姓名start -->
+        <div class="mb-4">
+          <label class="fs-8 font-serifTc mb-1" for="order__name ">姓名<span class="text-danger">*</span></label>
+         <input class="form-control bg-light border-black-30 py-2 px-4" type="text" name="order__name" id="order__name" placeholder="例:李餅乾">
+        </div>
+          <!-- 姓名end -->
+           <!-- 電話start -->
+        <div class="mb-4">
+          <label class="fs-8 font-serifTc mb-1" for="order__name ">聯絡電話<span class="text-danger">*</span></label>
+         <input class="form-control bg-light border-black-30 py-2 px-4" type="number" name="order__phone" id="order__phone" placeholder="例:0912-345-678">
+        </div>
+          <!-- 電話end -->
+             <!-- 電子郵件 start -->
+        <div class="mb-4">
+          <label class="fs-8 font-serifTc mb-1" for="order__email ">電子郵件<span class="text-danger">*</span></label>
+         <input class="form-control bg-light border-black-30 py-2 px-4" type="email" name="order__email" id="order__email" placeholder="例:iiincookie@gmail.com">
+        </div>
+          <!-- 電子郵件 end -->
+             <!-- 寄送地址 start -->
+        <div class="mb-6">
+          <label class="fs-8 font-serifTc mb-1" for="order_address ">寄送地址<span class="text-danger">*</span></label>
+         <input class="form-control bg-light border-black-30 py-2 px-4" type="number" name="order__address" id="order__address" placeholder="例: 可收件地址，如要自取請填寫“自取”">
+        </div>
+          <!-- 寄送地址 end -->
+          <!-- 運送方式 start -->
+          <div class="d-flex align-items-center gap-9 mb-6">
+            <p >運送方式</p>
+            <div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="deliveryWays" id="homeDelivery checked" checked>
+                <label class="form-check-label" for="homeDelivery">
+                  宅配
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="deliveryWays" id="selfPick">
+                <label class="form-check-label" for="selfPick">
+                  自行取貨
+                </label>
+              </div>
+            </div>
+          </div>
+          <!-- 運送方式 end -->
+           <!-- 付款方式 start -->
+           <div class="d-flex align-items-center gap-9 mb-6">
+            <p >付款方式</p>
+            <div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="paymentWays" id="pay__credit " checked>
+                <label class="form-check-label" for="pay__credit">
+                  信用卡
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="paymentWays" id="pay__atm">
+                <label class="form-check-label" for="pay__atm">
+                  ATM/網銀匯款
+                </label>
+              </div>
+            </div>
+          </div>
+          <!-- 付款方式 end -->
+          <p class="mb-6">下一步將連至第三方金流服務進行刷卡，你所有的交易資訊皆獲得安全保護。</p>
+          <div class="d-flex justify-content-end">
+            <a href="#" class="btn btn-primary py-2 px-9">信用卡付款</a>
+          </div>
+      </form>
     </div>
-      <!--運送方式 end-->
-      <!-- 付款方式 start-->
-      <div class="radio-order">
-        <p>付款方式</p>
-       <ul >
-         <li  class="radio-list" >  
-           <input type="radio" name="pay" id="credit" checked>
-           <label for="credit">信用卡</label>
-         </li>
-       
-         <li>  
-           <input type="radio" name="pay" id="atm" >
-           <label for="atm">ATM/網銀匯款</label>
-         </li>
-       </ul>
-     </div>
-        <!-- 付款方式 end-->
+    <!-- 訂單資訊 start-->
+    <!-- 購物車 start -->
+    <div class="col-lg-5 mb-6 mb-lg-0">
+      <div class="p-lg-6   shadow-lg-sm rounded-2  border-lg">
+        <a class="d-flex gap-1 align-items-center mb-4" href="product.html">
+          <span class="material-symbols-outlined">
+            navigate_before
+            </span>
+            <p class="fs-7">
+              還有想購買的商品嗎？
+            </p>
+        </a>
 
-      <p class="safe">下一步將連至第三方金流服務進行刷卡，你所有的交易資訊皆獲得安全保護。</p>
-      <button type="submit" class="btn-primary btn-order">付款</button>
-    </form>
-
-    <!-- 購物車start -->
-    <form class="cart">
-      <div class="backToProduct">
-        <a href="product.html"><img src="./assets/images/icon-arrow.svg" alt=""></a>
-        <a href="product.html">還有想購買的物品嗎？</a>
-      </div>
-      
-      <h4 class="cart-title">購物車</h4>
-      <div class="line-cart"></div>
-      <!-- 購物車產品區start -->
-      <ul class="cart-list">
-        <li class="cart-item">
-          <img src="./assets/images/rectangel/choclate.jpg" alt="">
-          <div class="item-main">
-              <div class="item-name">
-                  <p>伯爵巧克力夾餡(六入)</p>
-                  <img src="./assets/images/icon-close.svg" alt="">
-              </div>
-              <div class="item-price">
-                  <p>NT$350</p>
-                  <input class="number-cart" type="number" value="1" >
-              </div>
-          </div>
-        </li>
-       
-        <li class="cart-item">
-          <img src="./assets/images/rectangel/lightwood正方形.jpg" alt="">
-          <div class="item-main">
-              <div class="item-name">
-                  <p>中型鐵盒餅乾</p>
-                  <img src="./assets/images/icon-close.svg" alt="">
-              </div>
-              <div class="item-price">
-                  <p>NT$350</p>
-                  <input class="number-cart" type="number"  value="1" >
-              </div>
-          </div>
-        </li>
+        <p class="fs-4 font-serifTc pb-4 border-bottom border-black-10">購物車</p>
         
-        
-      </ul>
-           <!-- 購物車產品區 end -->
-      
-      <ul class="cost">
-        <li class="subTotal">
-          <p>小計</p>
-          <p>NT$700</p>
-        </li>
-        <li class="deliveryFree">
-          <p>運費</p>
-          <p>NT$130</p>
-        </li>
-        <li class="total">
+        <!-- 購物車1 start-->
+        <div class="d-flex py-6 gap-3 border-bottom border-black-10 ">
+          <img class="w-20n" src="./assets/images/rectangel/choclate.jpg" alt="">
+          <div class="w-100 d-flex flex-column justify-content-between">
+            <div class="d-flex justify-content-between align-items-center">
+              <p>伯爵巧克力夾餡(六入)
+              </p>
+              <span class="material-symbols-outlined fs-2">
+                close
+                </span>
+            </div>
+            <div class="d-flex justify-content-between align-items-end ">
+              <p class="fw-medium">NT$350</p>
+              <input class="w-30 py-1 px-2 rounded-2 bg-light border-black-30 border-1" type="number" value="1">
+            </div>
+          </div>
+        </div>
+        <!-- 購物車1 end-->      
+         <!-- 購物車2 start-->
+         <div class="d-flex py-6 gap-3 border-bottom border-black-10 mb-6 ">
+          <img class="w-20n" src="./assets/images/rectangel/lightwood正方形.jpg" alt="">
+          <div class="w-100 d-flex flex-column justify-content-between">
+            <div class="d-flex justify-content-between align-items-center">
+              <p>鐵盒禮盒
+              </p>
+              <span class="material-symbols-outlined fs-2">
+                close
+                </span>
+            </div>
+            <div class="d-flex justify-content-between align-items-end ">
+              <p class="fw-medium">NT$600</p>
+              <input class="w-30 py-1 px-2 rounded-2 bg-light border-black-30 border-1" type="number" value="1">
+            </div>
+          </div>
+        </div>
+        <!-- 購物車2 end-->   
+        <!-- 總額 start-->
+        <div class="pb-6 border-bottom border-black-10 mb-4">
+            <div class="mb-4 d-flex  justify-content-between">
+              <p>小計</p>
+              <p>NT$700</p>
+            </div>
+            <div class="d-flex justify-content-between">
+              <p>運費</p>
+              <p>NT$130</p>
+            </div>
+        </div>
+        <div class="d-flex justify-content-between">
           <p>總計</p>
           <p>NT$830</p>
-        </li>
-      </ul>
+        </div>
+        
+        <!-- 總額 end-->
+       
 
-    
+  
+    </div>
+    </div>
+     <!-- 購物車 start -->
 
-    </form>
+</div>
 
-  </div>
- </div>
