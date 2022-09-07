@@ -121,6 +121,8 @@ $utilities: map-merge(
         class: h,
         values: (
           1:  1px,
+          2n: 8px,
+          3n: 12px,
           4n: 16px,
           5n: 20px,
           8n: 32px,
@@ -147,6 +149,8 @@ $utilities: map-merge(
                 map-get(map-get($utilities, "width"), "values"),
                 ( 
                   1 :1px,
+                  2n: 8px,
+                  3n: 12px,
                   4n: 16px,
                   8n: 32px,
                   10n :40px,
@@ -256,6 +260,80 @@ $utilities: map-merge(
           3: 0.3em,
         ) 
         
+    ),
+    "rounded": (
+      property: border-radius,
+      class: rounded,
+      responsive: true,
+      values: (
+        null: $border-radius,
+        0: 0,
+        1: $border-radius-sm,
+        2: $border-radius,
+        3: $border-radius-lg,
+        circle: 50%,
+        pill: $border-radius-pill
+      )
+    ),
+    "rounded-top": (
+      property: border-top-left-radius border-top-right-radius,
+      class: rounded-top,
+       responsive: true,
+      values: (
+        null: $border-radius,
+        0: 0,
+        1: $border-radius-sm,
+        2: $border-radius,
+        3: $border-radius-lg,
+        circle: 50%,
+        pill: $border-radius-pill
+
+      )
+    ),
+    "rounded-end": (
+      property: border-top-right-radius border-bottom-right-radius,
+      class: rounded-end,
+       responsive: true,
+      values: (
+        null: $border-radius,
+        0: 0,
+        1: $border-radius-sm,
+        2: $border-radius,
+        3: $border-radius-lg,
+        circle: 50%,
+        pill: $border-radius-pill
+
+      )
+    ),
+    "rounded-bottom": (
+      property: border-bottom-right-radius border-bottom-left-radius,
+      class: rounded-bottom,
+       responsive: true,
+      values: (
+        null: $border-radius,
+        0: 0,
+        1: $border-radius-sm,
+        2: $border-radius,
+        3: $border-radius-lg,
+        circle: 50%,
+        pill: $border-radius-pill
+
+      )
+    ),
+    "rounded-start": (
+      property: border-bottom-left-radius border-top-left-radius,
+      class: rounded-start,
+       responsive: true,
+      values: (
+        null: $border-radius,
+        0: 0,
+        1: $border-radius-sm,
+        2: $border-radius,
+        3: $border-radius-lg,
+        circle: 50%,
+        pill: $border-radius-pill
+
+      )
     ),
           
       

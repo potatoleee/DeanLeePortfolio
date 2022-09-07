@@ -1,13 +1,17 @@
 
-// 邊框特效 start
-.product__img__sub{
-       
+
+
+
+
+.product__img__sub {
+  
         img{
-            border:2px solid transparent;
-            transition: all .5s;
+            border:2px solid $light-gray;
             &.active{
                 border: 2px solid $primary;
             }
         }
+
 }
-// 邊框特效 end
+
+

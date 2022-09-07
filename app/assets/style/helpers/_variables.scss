@@ -314,6 +314,7 @@ $position-values: (
   12p: 12%,
   20p: 20%,
   24p: 24%,
+  40p: 40%,
   50: 50%,
   100: 100%,
   4: 4px,
@@ -437,7 +438,7 @@ $border-color:                $gray-300 !default;
 // scss-docs-start border-radius-variables
 $border-radius:               .25rem !default;
 $border-radius-sm:            .2rem !default;
-$border-radius-lg:            .3rem !default;
+$border-radius-lg:            .5rem !default;
 $border-radius-pill:          50rem !default;
 // scss-docs-end border-radius-variables
 

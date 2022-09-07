@@ -1,4 +1,7 @@
 
+// new WOW().init();
+
+ AOS.init();
 
 
 // loading 動畫start
@@ -28,11 +31,10 @@ $('.product__img__sub img').click(function(e){
 $('.product__img__main ').attr('src',$(this).attr('src'));
 $(this).addClass('active');
 $(this).parent().siblings().find('img').removeClass('active');
-})
+})//點小圖換大圖 end
 
 
-//faq
-
+//faq start
 $('.faq-list_title').click(function(e){
     $(this).find('.btn-faq').toggleClass('open');
     $(this).siblings('.faq-list_p').slideToggle();
@@ -42,14 +44,48 @@ $('.faq-list_title').click(function(e){
     $(this).parent().siblings().find('.btn-faq').removeClass('open');
 
 
-})
+})//faq end
 
+// 登入開換頭貼start
 $('#btn__login--base').on('click',function(){
     $('.login__success').addClass('open');
     $('.login__default').addClass('open');
 
 
+})// 登入開換頭貼end
+
+//每一次縮放視窗的時候執行
+$(window).resize(function(){
+  gsapAnimate()
 })
+
+
+function gsapAnimate(){
+     if( $(window).width() >= 768 ){
+         $(window).scroll(function(){
+             offsetTop = $(window).scrollTop();
+             // console.log(offsetTop/10)
+             //x:“偏移”,“時間：數字越大呈現時間越久"
+             gsap.to(".about-text", { y:-offsetTop/5, duration: 1})
+             
+         })//scroll end
+     }else{
+         $(window).scroll(function(){
+             offsetTop = $(window).scrollTop()
+             // console.log(offsetTop/10)
+             //x:“偏移”,“時間：數字越大呈現時間越久"
+             gsap.to(".about-text", { y:-offsetTop/6, duration: 1})
+         
+     })//scroll end
+ }
+}
+
+//要在外面才可以執行
+gsapAnimate()
+
+
+
+
 
 
 
