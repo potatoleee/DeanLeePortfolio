@@ -100,9 +100,29 @@ function gsapAnimate(){
      })//scroll end
  }
 }
+function gsapAnimate2(){
+  if( $(window).width() >= 768 ){
+      $(window).on('scroll',function(){
+          let offsetTop = $(window).scrollTop()
+          // console.log(offsetTop/10)
+          //x:“偏移”,“時間：數字越大呈現時間越久"
+          gsap.to(".scrolling2", { y:-offsetTop/10, duration: 1})
+          
+      })//scroll end
+  }else{
+      $(window).on('scroll',function(){
+         let offsetTop = $(window).scrollTop()
+          // console.log(offsetTop/10)
+          //x:“偏移”,“時間：數字越大呈現時間越久"
+          gsap.to(".scrolling2", { y:-offsetTop/10, duration: 1})
+      
+  })//scroll end
+}
+}
 
 //要在外面才可以執行
 gsapAnimate()
+gsapAnimate2()
 
 
 
@@ -128,3 +148,10 @@ var swiper = new Swiper(".commentSwiper", {
       prevEl: ".swiper-button-prev",
     },
   });
+
+  // datepicker
+
+  const elem = document.querySelector('input[name="foo"]');
+const datepicker = new Datepicker(elem, {
+  // ...options
+}); 
