@@ -87,7 +87,7 @@ function gsapAnimate(){
              let offsetTop = $(window).scrollTop()
              // console.log(offsetTop/10)
              //x:“偏移”,“時間：數字越大呈現時間越久"
-             gsap.to(".about-text", { y:-offsetTop/5, duration: 1})
+             gsap.to(".scrolling", { y:-offsetTop/6, duration: 1})
              
          })//scroll end
      }else{
@@ -95,7 +95,7 @@ function gsapAnimate(){
             let offsetTop = $(window).scrollTop()
              // console.log(offsetTop/10)
              //x:“偏移”,“時間：數字越大呈現時間越久"
-             gsap.to(".about-text", { y:-offsetTop/6, duration: 1})
+             gsap.to(".scrolling", { y:-offsetTop/6, duration: 1})
          
      })//scroll end
  }

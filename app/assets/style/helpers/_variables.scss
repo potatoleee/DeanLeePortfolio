@@ -68,7 +68,7 @@ $colors: (
 // scss-docs-end colors-map
 
 // scss-docs-start theme-color-variables
-$primary:        #68715F; // $blue !default;
+$primary:        #68715F;//#8B8A77; // $blue !default;
 $secondary:     #C0B3A2;//$gray-600 !default;
 $success:       $green !default;
 $info:          $cyan !default;
@@ -315,6 +315,7 @@ $position-values: (
   20p: 20%,
   24p: 24%,
   40p: 40%,
+  30p: 30%,
   50: 50%,
   100: 100%,
   4: 4px,
