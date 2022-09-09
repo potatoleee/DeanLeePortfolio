@@ -1,0 +1,137 @@
+---
+title: 會員專區 餅乾生產餡
+layout: ./app/layout.ejs
+engine: ejs
+current: member
+---
+
+<div class="container my-md-10 my-8">
+    <!-- 切換nav start -->
+    <a href="#" class="btn btn-primary mb-7">登出</a> 
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item w-25" role="presentation">
+          <button class="nav-link active w-100" id="info-tab" data-bs-toggle="tab" data-bs-target="#member__info" type="button" role="tab" aria-controls="home" aria-selected="true">個人資訊</button>
+        </li>
+
+          <li class="nav-item  w-25" role="presentation">
+            <button class="nav-link w-100 " id="oreder-tab" data-bs-toggle="tab" data-bs-target="#member__order" type="button" role="tab" aria-controls="profile" aria-selected="false">訂單</button>
+          </li>
+        
+        <li class="nav-item  w-25" role="presentation">
+          <button class="nav-link w-100 " id="coupon-tab" data-bs-toggle="tab" data-bs-target="#member__coupon" type="button" role="tab" aria-controls="contact" aria-selected="false">購物金</button>
+        </li>
+        <li class="nav-item  w-25" role="presentation">
+            <button class="nav-link w-100 " id="message-tab" data-bs-toggle="tab" data-bs-target="#member__message" type="button" role="tab" aria-controls="contact" aria-selected="false">訊息</button>
+          </li>
+          
+    </ul>
+    <!-- 切換nav end -->
+
+      <!-- 切換內容 start -->
+      <div class="tab-content border border-top-0  p-6" id="myTabContent">
+        <div class="tab-pane fade show active" id="member__info" role="tabpanel" aria-labelledby="info-tab">
+            <div class="d-flex align-items-center gap-2 mb-8">
+                <span class="material-symbols-outlined">
+                    person
+                    </span>
+                <p>李東穎</p>
+                <p class="bg-primary p-1 px-2 text-light">一般會員</p>
+
+            </div>
+            <div class="d-flex gap-2 mb-5">
+                <span class="material-symbols-outlined">
+                    edit
+                    </span>
+                <p>編輯會員資料</p>                    
+            </div>
+
+            <form>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="mb-5">
+                            <label class="fs-8 font-serifTc mb-1" for="member__name ">姓名</label>
+                           <input class="form-control bg-light border-black-30 py-2 px-4" type="text" name="member__name" id="member__name" value="李東穎">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="mb-5">
+                            <label class="fs-8 font-serifTc mb-1" for="custom__email ">電子郵件<span class="text-danger">*</span></label>
+                        <input class="form-control bg-light border-black-30 py-2 px-4" type="text" name="custom__email" id="custom__email" value="dean1990226@gmail.com">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="mb-5">
+                            <label class="fs-8 font-serifTc mb-1" for="member__phone ">電話號碼（選填）</label>
+                           <input class="form-control bg-light border-black-30 py-2 px-4" type="text" name="member__phone" id="member__phone" value="0939914514">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="mb-5">
+                            <label class="fs-8 font-serifTc mb-1" for="member__address ">送貨地址（選填）</label>
+                           <input class="form-control bg-light border-black-30 py-2 px-4" type="text" name="member__address" id="member__address" value="">
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="mb-5">
+                            <label for="member__password__now" class="fs-8 font-serifTc mb-1">目前密碼</label>
+                            <div class="d-flex pos-relative">
+
+                                <input type="password" class="form-control bg-light border-black-30 py-2 px-4 " id="member__password__now"  name="member__password__now" value="iii7777 ">
+                                <span class="material-symbols-outlined pos-absolute end-16 top-50 translate-middle-y cursor-pointer">
+                                    visibility
+                                    </span>
+                            </div>
+                        
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="mb-5">
+                            <label for="member__password__new" class="fs-8 font-serifTc mb-1">新密碼（不需變更請留空）</label>
+                            <div class="d-flex pos-relative">
+
+                                <input type="password" class="form-control bg-light border-black-30 py-2 px-4 " id="member__password__new"  name="member__password__new" placeholder="不需變更請留空">
+                                <span class="material-symbols-outlined pos-absolute end-16 top-50 translate-middle-y cursor-pointer">
+                                    visibility
+                                    </span>
+                            </div>
+                        
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="mb-5">
+                            <label for="member__password__new--check" class="fs-8 font-serifTc mb-1">確認新密碼</label>
+                            <div class="d-flex pos-relative">
+
+                                <input type="password" class="form-control bg-light border-black-30 py-2 px-4 " id="member__password__new--check"  name="member__password__new--check"  placeholder="不需變更請留空">
+                                <span class="material-symbols-outlined pos-absolute end-16 top-50 translate-middle-y cursor-pointer">
+                                    visibility
+                                    </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center gap-8 mb-5">
+                        <p>帳戶綁定</p>
+                        <div class="d-flex align-items-center gap-2">
+                            <div class="d-flex gap-1 align-items-center">
+                                <i class="fa-brands fa-facebook text-fb fs-6"></i>
+                                <p class="text-fb fs-6">Facebook</p>
+                            </div>
+                            <img class=" rounded-circle w-8n h-8n object-cover" src="./assets/images/avator01.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-end gap-6">
+                        <button type="button" class="btn btn-outline-dark">取消</button>
+                        <button type="button" class="btn btn-primary">儲存變更</button>
+                    </div>
+                </div>
+            </form>
+                
+        </div>
+        <div class="tab-pane fade" id="member__order" role="tabpanel" aria-labelledby="order-tab">2</div>
+        <div class="tab-pane fade" id="member__coupon" role="tabpanel" aria-labelledby="coupon-tab">3</div>
+        <div class="tab-pane fade" id="member__message" role="tabpanel" aria-labelledby="message-tab">4</div>
+      </div>
+       <!-- 切換內容 end -->
+
+
+</div>
