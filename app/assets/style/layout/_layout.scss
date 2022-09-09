@@ -129,7 +129,7 @@ header{
                 margin: auto;
                 color:transparent;
                 background:$brand-color;
-                height: 2px;
+                height: 1px;
                 transition: all .5s;
             }
             &:hover{
@@ -164,17 +164,6 @@ header{
         }
         
         
-    }
-    .login__default{
-        &.open{
-            display: none;
-        }
-    }
-    .login__success{
-        display: none;
-        &.open{
-            display: block;
-        }
     }
 
 
