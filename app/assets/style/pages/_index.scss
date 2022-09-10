@@ -4,10 +4,13 @@
 // padding-bottom: 66.67%;
  background-image: url("../images/newbanner.jpg");
  background-size: cover;
- height: 100vh;
+ height: calc( 100vh - 72px );
  background-repeat: no-repeat;
  position: relative;
  background-position: center;
+ @include phone{
+    height: calc( 100vh - 76px );
+ }
  &__text{
     padding-top: 130px;
  }
