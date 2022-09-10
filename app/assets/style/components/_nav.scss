@@ -1,0 +1,10 @@
+.nav-tabs {
+border-bottom: 1px solid $black-70;
+    .nav-link{
+
+        &.active{
+            border-color: $black-70  $black-70 $light;
+        }
+    }
+    }
+    
