@@ -9,10 +9,10 @@ current: index
 <div class="container my-md-10 my-8">
   <ul class="nav nav-pills justify-content-center row g-0" id="myTab" role="tablist">
     <li class="nav-item col-md-4 col-6" role="presentation">
-      <button class="nav-link active w-100 py-2  fs-4 font-serifTc border-primary border rounded-end-0" id="login__tab" data-bs-toggle="tab" data-bs-target="#login" type="button" role="tab" aria-controls="login" aria-selected="true">登入</button>
+      <button class="nav-link active w-100 py-2  fs-md-4 font-serifTc border-primary border rounded-end-0" id="login__tab" data-bs-toggle="tab" data-bs-target="#login" type="button" role="tab" aria-controls="login" aria-selected="true">登入</button>
     </li>
     <li class="nav-item col-md-4 col-6" role="presentation">
-      <button class="nav-link w-100 py-2 fs-4 font-serifTc border-primary border rounded-start-0" id="sign__tab" data-bs-toggle="tab" data-bs-target="#sign" type="button" role="tab" aria-controls="sign" aria-selected="false">註冊</button>
+      <button class="nav-link w-100 py-2 fs-md-4 font-serifTc border-primary border rounded-start-0" id="sign__tab" data-bs-toggle="tab" data-bs-target="#sign" type="button" role="tab" aria-controls="sign" aria-selected="false">註冊</button>
     </li>
     
   </ul>
@@ -20,7 +20,7 @@ current: index
   <div class="tab-content mt-9" id="myTabContent">
         <!-- 登入表單 start -->
         <div class="tab-pane fade show active" id="login" role="tabpanel" aria-labelledby="login__tab">
-          <h2 class="fs-md-2 fs-3 font-serifTc text-center mb-8">歡迎回來！</h2>
+          <h2 class="fs-md-2 fs-3 font-serifTc text-center mb-6 mb-md-8">歡迎回來！</h2>
           <form class="mx-auto w-md-60 w-100">
           <div class="mb-4">
             <label for="login__email" class="form-label fs-8 mb-1">電子郵件</label>
@@ -28,21 +28,24 @@ current: index
           </div>
           
 
-          <div class="mb-3">
+          <div class="mb-4">
             <label for="login__password" class="form-label fs-8 mb-1">密碼</label>
             <input type="password" class="form-control bg-light border-black-30 py-2 px-4 " id="login__password"  name="login__password" placeholder="請輸入密碼 ">
           </div>
 
+          <div class="mb-8 d-flex justify-content-between">
 
-          <div class="form-check mb-4">
-            <input class="form-check-input" type="checkbox" value="" id="login__remember">
-            <label class="form-check-label fs-7 text-black-90 bg-light" for="login__remember">
-              記住我
-            </label>
+            <div class="form-check ">
+              <input class="form-check-input" type="checkbox" value="" id="login__remember">
+              <label class="form-check-label fs-7 text-black-90 bg-light" for="login__remember">
+                記住我
+              </label>
+            </div>
+            <a href="forgetPassword.html" class="fs-7">忘記密碼嗎？</a>
+            
           </div>
-          
-          <a class="fs-7 text-black-70 cursor-pointer mb-6 mb-md-10" href="forgetPassword.html">忘記你的密碼嗎？</a>
-          <!-- <p class="fs-7 text-black-70 cursor-pointer mb-6 mb-md-10">忘記你的密碼嗎？</p> -->
+     
+      
           
           <div class="d-flex flex-column  w-55 mx-auto">
             <a href="member.html" id="btn__login--base" class="btn btn-primary mb-5 py-2 ">買餅乾囉！</a>
@@ -52,7 +55,7 @@ current: index
 
         </form>
         </div>
-        <!-- 登入表單 end -->
+        <!-- 登入表單 end --> 
 
        <!-- 註冊表單 start-->
        <div class="tab-pane fade" id="sign" role="tabpanel" aria-labelledby="sign__tab">
