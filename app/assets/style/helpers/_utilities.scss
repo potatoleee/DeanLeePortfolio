@@ -261,6 +261,7 @@ $utilities: map-merge(
       property: text-indent,
       class: text-indent,
       values:(
+          0: 0,
           2: 0.2em,
           3: 0.3em,
         ) 

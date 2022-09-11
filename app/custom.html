@@ -24,7 +24,7 @@ current: custom
                 <div class="mb-7">
                     <p class="mb-2 text-center">如有節日，喜餅客製化，大量需求，可填寫表單或是私訊instagram </p>
                         <p class="mb-2 text-center">我們會盡快以Email回覆或是直接與您電話聯絡，謝謝！</p>
-                    <a class="text-primary text-center"href="https://www.instagram.com/iiin.cookies/">點擊此至 iiin_cookie</a>
+                    <a class="text-primary text-center" target="_blank"  href="https://www.instagram.com/iiin.cookies/">點擊此至 iiin_cookie</a>
                 </div>
 
                 <form >
@@ -95,7 +95,29 @@ current: custom
                             </div>
                         </div>
                         <div class="col-lg-4">
-                            <a class="btn btn-primary py-2 w-100"href="#">送出</a>
+                            <!-- <a class="btn btn-primary py-2 w-100"href="#">送出</a> -->
+                            <button type="button" class="btn btn-primary  py-2 w-100" data-bs-toggle="modal" data-bs-target="#copyCouponModal">
+                                送出
+                            </button>
+                            
+                            <!-- Modal -->
+                            <div class="modal fade" id="copyCouponModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header border-bottom-0">
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                      </div>
+                                    <div class="modal-body">
+                                        <p class="d-flex align-items-center gap-2 justify-content-center">
+                                        <span class="material-symbols-outlined text-primary">
+                                            check_circle
+                                            </span>
+                                        已成功送出表單，我們將盡快與您聯繫謝謝！
+                                        </p>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </form>
