@@ -1,5 +1,4 @@
 
-// new WOW().init();
 
 AOS.init({
     // Global settings:
@@ -38,7 +37,15 @@ $(window).on('load',function(){
 // loading 動畫end
 
 $(document).ready(function(){
+  // toast show
+  $(".ToastBtn").click(function(){
+    $(".liveToast").toast("show");
+});//toast show end
 
+//toast 出現秒數
+$(".liveToast").toast({
+  delay: 2000
+}); ////toast 出現秒數 end
 
 // scoll top
     $('.pagetop').on('click',function(){
@@ -164,3 +171,6 @@ var swiper = new Swiper(".commentSwiper", {
 const datepicker = new Datepicker(elem, {
   // ...options
 }); 
+
+
+

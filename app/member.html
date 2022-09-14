@@ -34,7 +34,7 @@ current: member
                 <span class="material-symbols-outlined">
                     person
                     </span>
-                <p>李東穎</p>
+                <p>李餅乾</p>
                 <p class="bg-primary p-1 px-2 text-light">一般會員</p>
 
             </div>
@@ -50,13 +50,13 @@ current: member
                     <div class="col-lg-6">
                         <div class="mb-5">
                             <label class="fs-8 font-serifTc mb-1" for="member__name ">姓名</label>
-                           <input class="form-control bg-light border-black-30 py-2 px-4" type="text" name="member__name" id="member__name" value="李東穎">
+                           <input class="form-control bg-light border-black-30 py-2 px-4" type="text" name="member__name" id="member__name" value="李餅乾">
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="mb-5">
                             <label class="fs-8 font-serifTc mb-1" for="custom__email ">電子郵件<span class="text-danger">*</span></label>
-                        <input class="form-control bg-light border-black-30 py-2 px-4" type="text" name="custom__email" id="custom__email" value="dean1990226@gmail.com">
+                        <input class="form-control bg-light border-black-30 py-2 px-4" type="text" name="custom__email" id="custom__email" value="iiincookie666@gmail.com">
                         </div>
                     </div>
                     <div class="col-lg-6">
@@ -176,7 +176,23 @@ current: member
               
         </div>
         <!-- 優惠券 start-->
+       
         <div class="tab-pane fade" id="member__coupon" role="tabpanel" aria-labelledby="coupon-tab">
+          
+            <!-- 複製toast-content -->
+            <div class="pos-fixed p-3 top-80 start-50 translate-middle-x" style="z-index: 11">
+                <div  class="toast liveToast " role="alert" aria-live="assertive" aria-atomic="true">
+                    <div class="toast-body ">
+                        <p class="d-flex align-items-center gap-2 justify-content-center">
+                            <span class="material-symbols-outlined text-primary">
+                                check_circle
+                                </span>
+                            已成功複製
+                            </p>
+                    </div>
+                </div>
+            </div>
+            <!-- 複製toast-content -->
             <ul class="row g-6">
                 <li class="col-lg-6">
                     <div class="border rounded-2 p-6 border-black-30">
@@ -188,68 +204,30 @@ current: member
                                 <p class="text-black-30">專屬消費僅有一次</p>
                             </div>
                         </div>
-                        <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center justify-content-between gap-2">
                             <p>優惠券代碼 wellcomeiiin</p>
-                            <!-- <button class="btn btn-outline-dark fs-7">複製</button> -->
-                            <!-- Button trigger modal -->
-                            <button type="button" class="btn btn-outline-primary fs-6" data-bs-toggle="modal" data-bs-target="#copyCouponModal">
-                                複製
-                            </button>
-                            
-                            <!-- Modal -->
-                            <div class="modal fade" id="copyCouponModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog">
-                                <div class="modal-content">
-                                   
-                                    <div class="modal-body">
-                                        <p class="d-flex align-items-center gap-2 justify-content-center">
-                                        <span class="material-symbols-outlined text-primary">
-                                            check_circle
-                                            </span>
-                                        已成功複製
-                                        </p>
-                                    </div>
-                                </div>
-                                </div>
-                            </div>
+                            <button type="button" class="btn btn-outline-primary fs-6 ToastBtn" >複製</button>
                         </div>
+                     
+    
                     </div>
                 </li>
                 <li class="col-lg-6">
                     <div class="border rounded-2 p-6 border-black-30">
                         <div class="d-flex align-items-start gap-7 pb-4 mb-4 border-bottom flex-column flex-lg-row">
-                            <p class="bg-secondary p-4 fs-5 text-light fw-bold text-center w-100 w-lg-auto">100元</p>
+                            <p class="bg-secondary p-4 fs-5 text-light fw-bold text-center w-100 w-lg-auto">60元</p>
                             <div>
                                 <p class="mb-1">中秋節快樂～</p>
                                 <p>消費滿NT$1000可折扣100元</p>
                                 <p class="text-black-30">專屬消費僅有一次</p>
                             </div>
                         </div>
-                        <div class="d-flex align-items-center justify-content-between">
-                            <p>優惠券代碼 HappyMoonFestival</p>
-                            <!-- <button class="btn btn-outline-dark fs-7">複製</button> -->
-                            <!-- Button trigger modal -->
-                            <button type="button" class="btn btn-outline-primary fs-6" data-bs-toggle="modal" data-bs-target="#copyCouponModal">
-                                複製
-                            </button>
-                            
-                            <!-- Modal -->
-                            <div class="modal fade" id="copyCouponModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog">
-                                <div class="modal-content">
-                                   
-                                    <div class="modal-body">
-                                        <p class="d-flex align-items-center gap-2 justify-content-center">
-                                        <span class="material-symbols-outlined text-primary">
-                                            check_circle
-                                            </span>
-                                        已成功複製
-                                        </p>
-                                    </div>
-                                </div>
-                                </div>
-                            </div>
+                        <div class="d-flex align-items-center justify-content-between gap-2">
+                            <p>優惠券代碼 wellcomeiiin</p>
+                            <button type="button" class="btn btn-outline-primary fs-6 ToastBtn" >複製</button>
                         </div>
+                    
+    
                     </div>
                 </li>
                 <li class="col-lg-6">
@@ -262,34 +240,14 @@ current: member
                                 <p class="text-black-30">專屬消費僅有一次</p>
                             </div>
                         </div>
-                        <div class="d-flex align-items-center justify-content-between">
-                            <p>優惠券代碼 HappyBirthday</p>
-                            <!-- <button class="btn btn-outline-dark fs-7">複製</button> -->
-                            <!-- Button trigger modal -->
-                            <button type="button" class="btn btn-outline-primary fs-6" data-bs-toggle="modal" data-bs-target="#copyCouponModal" data-bs-backdrop="static">
-                                複製
-                            </button>
-                            
-                            <!-- Modal -->
-                            <div class="modal fade" id="copyCouponModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog">
-                                <div class="modal-content">
-                                   
-                                    <div class="modal-body">
-                                        <p class="d-flex align-items-center gap-2 justify-content-center">
-                                        <span class="material-symbols-outlined text-primary">
-                                            check_circle
-                                            </span>
-                                        已成功複製
-                                        </p>
-                                    </div>
-                                </div>
-                                </div>
-                            </div>
+                        <div class="d-flex align-items-center justify-content-between gap-2">
+                            <p>優惠券代碼 wellcomeiiin</p>
+                            <button type="button" class="btn btn-outline-primary fs-6 ToastBtn" >複製</button>
                         </div>
+                      
+    
                     </div>
-                </li>
-               
+                </li> 
             </ul>
         </div>
         <!-- 優惠券 end-->

@@ -126,7 +126,7 @@ current: index
                    
                 </ul>
             </div>
-            <div class="col-12 col-lg-3  ps-lg-9 mb-7  pos-relative" >
+            <div class="col-12 col-lg-3  ps-lg-9 mb-7  pos-relative"  data-aos="fade">
                 <div class="d-flex mb-md-9 mb-6" >
                     <h3 class="fs-3 fs-md-2 font-serifTc   vertical-rl  letterSpace-4 ">口味</h3>
                     <p class=" fs-8 fw-light  vertical-rl letterSpace-2 text-indent-3 ">FLAVOR</p>
@@ -183,7 +183,7 @@ current: index
 
       <!-- 客戶回饋 start -->
       <div class="share py-6 py-md-11">
-        <div class="container">
+        <div class="container" data-aos="fade">
             <div class="mb-md-9 mb-7">
                 <p class="fs-8 letterSpace-2 fw-light text-center">FEEDBACK</p>
                 <h3 class="font-serifTc  fs-3 fs-md-2 letterSpace-4  text-center ">客戶回饋</h3>
@@ -252,6 +252,22 @@ current: index
            
            </div>
         </div>
+    </div>
+
+    <button type="button" class="btn btn-primary" id="myBtn">Show live toast</button>
+
+    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+      <div id="myToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+          <img src="..." class="rounded me-2" alt="...">
+          <strong class="me-auto">Bootstrap</strong>
+          <small>11 mins ago</small>
+          <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body">
+          Hello, world! This is a toast message.
+        </div>
+      </div>
     </div>
        <!-- 客戶回饋 end -->
 
