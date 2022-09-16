@@ -20348,6 +20348,49 @@ fieldset:disabled .btn {
   letter-spacing: 2px;
 }
 
+.btn-hover {
+  position: relative;
+}
+
+.btn-hover::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 0%;
+  left: 0;
+  top: 0;
+  background-color: #125A61;
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+}
+
+.btn-hover::after {
+  position: absolute;
+  content: "關於我";
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #f5f5f5;
+  opacity: 0;
+  font-size: 20px;
+  letter-spacing: 4px;
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+}
+
+.btn-hover:hover::before {
+  background-color: #125A61;
+  width: 100%;
+}
+
+.btn-hover:hover::after {
+  opacity: 1;
+}
+
 html, body {
   height: 100%;
   margin: 0;
