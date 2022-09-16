@@ -20363,6 +20363,7 @@ main {
 
 @media (max-width: 767px) {
   main {
+    padding-top: 60px;
     padding-bottom: 76px;
   }
 }
