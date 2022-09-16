@@ -76,46 +76,39 @@ header{
     @include phone{
         display: block;
     }
+    &::before,&::after{
+        position: absolute;
+        content:"";
+        width: 20px;
+        height: 1px;
+        background-color: $black-100;
+        right: 2px;
+        transition: all .5s;
+    }
+    &::before{
+        top: 8px;
+    }
+    &::after{
+        bottom: 8px;
+    }
+    &.open{
+        &::before,&::after{
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        &::before{
+            transform: rotate(45deg);
+        }
+        &::after{
+            transform: rotate(-45deg);
+        }
+    }
     
-  }
-  .btn-burger::before{
-    position: absolute;
-    content:"";
-    width: 20px;
-    height: 1px;
-    background-color: $black-100;
-    top: 8px;
-    right: 2px;
-    transition: all .5s;
-  }
-  .btn-burger::after{
-    position: absolute;
-    content:"";
-    width: 20px;
-    height: 1px;
-    background-color: $black-100;
-    bottom: 8px;
-    right: 2px;
-    transition: all .5s;
-    
-  }
-//   絕對定位調整置中
-  .btn-burger.open::before,
-  .btn-burger.open::after {
-    top: 50%;
-    transform: translateY(-50%);
-  }
-  .btn-burger.open::before {
-    transform: rotate(45deg);
-  }
-  .btn-burger.open::after {
-    transform: rotate(-45deg);
   }
   // 漢堡end
 
-    .nav__content{
+.nav__content{
         a{
-            
             color:$dark;
             transition: all .5s;
             position: relative;
@@ -140,37 +133,21 @@ header{
             }
         }
         &__main{
-            display: flex;
             @include phone{
-                display: none;
+                visibility: hidden;
                 background: transparent;
                 opacity: 0;
-                transition: all .5s;
-              &.open{
-                    display: flex;
-                  opacity: 1;
-                  background:$light;
-              }
-            }
-            a{
-                @include phone{
-                    display: none;
-
-                     &.open{
-                         display: block;
-                    }
-                }
+                transition: opacity 0.7s cubic-bezier(0.445, 0.05, 0.55, 0.95), visibility 0.7s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+                
+            &.open{
+                visibility: visible;
+                opacity: 1;
+                background:$light;
+            
             }
         }
-        
-        
-    }
-
-
-
-
-
- 
+    }        
+}
 
 
 // footer start
