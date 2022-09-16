@@ -68,8 +68,8 @@ $colors: (
 // scss-docs-end colors-map
 
 // scss-docs-start theme-color-variables
-$primary:       #2D2A24;// $blue !default;
-$secondary:     #DBD5CD;//$gray-600 !default;
+$primary:       #125A61;// $blue !default;
+$secondary:     #f5f5f5;//#DBD5CD;//$gray-600 !default;
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
@@ -78,12 +78,13 @@ $light:         $gray-100 !default;
 $dark:         #2D2A24;// $gray-900 !default;
 $black-100:    #161A14;
 $black-90:rgba(22, 26, 20, 0.9);
-$black-80:rgba(22, 26, 20, 0.8);
+$black-80:hsla(100, 13%, 9%, 0.8);
 $black-70:rgba(22, 26, 20, 0.7);
 $black-50:rgba(22, 26, 20, 0.5);
 $black-30:rgba(48, 48, 48, 0.3);
 $black-10:rgba(48, 48, 48, 0.1);
-$mask-hover:rgb(28, 28, 28);
+
+$mask-hover:#0B3336;
 
 // scss-docs-end theme-color-variables
 
@@ -328,7 +329,7 @@ $zindex-values:(
 //
 // Settings for the `<body>` element.
 
-$body-bg:                   #DBD5CD;//$white !default;
+$body-bg:                  #F5F5F5;//#DBD5CD;//$white !default;
 $body-color:                $primary;//$gray-900 !default;
 $body-text-align:           null !default;
 

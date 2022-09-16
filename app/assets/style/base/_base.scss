@@ -21,12 +21,6 @@ main{
         }
       
 }
-.wrap{
-    height: calc(100% - 40px);
-    width: calc(100% - 40px);
-    top: 20px;
-    left: 20px;
-}
 .wrapper{
     display: flex; /*使物件依序排列*/
     flex-direction: column; /*使物件垂直排列*/
@@ -34,7 +28,7 @@ main{
     padding: 20px;
     width: 100%;
     @include phone{
-        padding: 12px;
+        padding: 4px;
     }
     
 }
