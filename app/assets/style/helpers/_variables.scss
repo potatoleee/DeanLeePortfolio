@@ -4,7 +4,7 @@
 // consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
 
 // Color system
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500&family=Noto+Serif+TC:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Expletus+Sans:wght@400;600&family=Noto+Sans+TC:wght@300;400;500;700&family=Roboto:wght@400;700&display=swap');
 
 // scss-docs-start gray-color-variables
 $white:    #fff !default;
@@ -68,15 +68,14 @@ $colors: (
 // scss-docs-end colors-map
 
 // scss-docs-start theme-color-variables
-$primary:        #68715F;//#8B8A77; // $blue !default;
-$secondary:     #C0B3A2;//$gray-600 !default;
+$primary:       #2D2A24;// $blue !default;
+$secondary:     #DBD5CD;//$gray-600 !default;
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
 $danger:        $red !default;
-$light:         #F0F0F0;//$gray-100 !default;
-$light-gray:    #e3e3e3;
-$dark:         #161A14;// $gray-900 !default;
+$light:         $gray-100 !default;
+$dark:         #2D2A24;// $gray-900 !default;
 $black-100:    #161A14;
 $black-90:rgba(22, 26, 20, 0.9);
 $black-80:rgba(22, 26, 20, 0.8);
@@ -84,14 +83,7 @@ $black-70:rgba(22, 26, 20, 0.7);
 $black-50:rgba(22, 26, 20, 0.5);
 $black-30:rgba(48, 48, 48, 0.3);
 $black-10:rgba(48, 48, 48, 0.1);
-$hover-color: rgba(240, 240, 240, 0.5);
-$faq-color:#4C684C;
-$brand-color:#492E24;
-$custom-bg:#C0B3A2;
-$btn-hover:#8C9B8F;
 $mask-hover:rgb(28, 28, 28);
-$fb: #3B5998;
-
 
 // scss-docs-end theme-color-variables
 
@@ -104,7 +96,6 @@ $theme-colors: (
   "warning":    $warning,
   "danger":     $danger,
   "light":      $light,
-  "light-gray": $light-gray,
   "dark":       $dark,
   "black-100":  $black-100,
   "black-90":   $black-90,
@@ -112,13 +103,8 @@ $theme-colors: (
   "black-50":   $black-50,
   "black-30":   $black-30,
   "black-10":   $black-10,
-  "hover-color": $hover-color,
-  "faq-color":  $faq-color,
-  "brand-color": $brand-color,
-  "custom-bg":  $custom-bg,
-  "btn-hover": $btn-hover,
-  "fb":       $fb,
-  
+  "mask-hover": $mask-hover,
+ 
 ) !default;
 // scss-docs-end theme-colors-map
 
@@ -311,24 +297,24 @@ $negative-spacers: if($enable-negative-margins, negativify-map($spacers), null) 
 $position-values: (
   0: 0,
   m48: -48px,
-  12p: 12%,
-  20p: 20%,
-  24p: 24%,
-  40p: 40%,
-  30p: 30%,
+  12: 12%,
+  20: 20%,
+  24: 24%,
+  40: 40%,
+  30: 30%,
   50: 50%,
   100: 100%,
-  4: 4px,
-  8: 8px,
-  12: 12px,
-  16: 16px,
-  20: 20px,
-  24: 24px,
-  32: 32px,
-  72: 72px,
-  80: 80px,
-  88: 88px,
-  94: 94px,
+  4p: 4px,
+  8p: 8px,
+  12p: 12px,
+  16p: 16px,
+  20p: 20px,
+  24p: 24px,
+  32p: 32px,
+  72p: 72px,
+  80p: 80px,
+  88p: 88px,
+  94p: 94px,
 ) !default;
 // scss-docs-end position-map
 $zindex-values:(
@@ -342,8 +328,8 @@ $zindex-values:(
 //
 // Settings for the `<body>` element.
 
-$body-bg:                   #F0F0F0;//$white !default;
-$body-color:                $gray-900 !default;
+$body-bg:                   #DBD5CD;//$white !default;
+$body-color:                $primary;//$gray-900 !default;
 $body-text-align:           null !default;
 
 
@@ -433,7 +419,7 @@ $border-widths: (
   5: 5px
 ) !default;
 
-$border-color:                $gray-300 !default;
+$border-color:                $primary;//$gray-300 !default;
 // scss-docs-end border-variables
 
 // scss-docs-start border-radius-variables
@@ -507,6 +493,7 @@ $weightValue: (
   light: 300,
   regular: 400,
   medium: 500,
+  semi-bold:600,
   bold: 700,
 ) !default;
 
@@ -532,14 +519,15 @@ $font-sizes: (
   //6: $h6-font-size
 
   1: 3rem,        //48px
-  40: 2.5rem,     //40px
-  2: 2rem,        //32px
-  3: 1.5rem,      //24px
-  4: 1.25rem,     //20px
-  5: 1.125rem,    //18px
-  6: 1rem,        //16px
-  7: 0.875rem,    //14px
-  8: 0.75rem,     //12px
+  2: 2.5rem,      //40px
+  3: 2.25rem,     //36px
+  4: 2rem,        //32px
+  5: 1.5rem,      //24px
+  6: 1.25rem,     //20px
+  7: 1.125rem,    //18px
+  8: 1rem,        //16px
+  9: 0.875rem,    //14px
+  10: 0.75rem,     //12px
 
   
   
@@ -550,8 +538,8 @@ $font-sizes: (
 $headings-margin-bottom:      $spacer * .5 !default;
 $headings-font-family:        null !default;
 $headings-font-style:         null !default;
-$headings-font-weight:        500 !default;
-$headings-line-height:        1.2 !default;
+$headings-font-weight:        400 !default;
+$headings-line-height:        1.5 !default;
 $headings-color:              null !default;
 // scss-docs-end headings-variables
 

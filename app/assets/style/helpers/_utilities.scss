@@ -120,7 +120,8 @@ $utilities: map-merge(
         responsive: true,
         class: h,
         values: (
-          1:  1px,
+          1p:  1px,
+          2p:  2px,
           2n: 8px,
           3n: 12px,
           4n: 16px,
@@ -148,7 +149,8 @@ $utilities: map-merge(
                 values: map-merge(
                 map-get(map-get($utilities, "width"), "values"),
                 ( 
-                  1 :1px,
+                  1p :1px,
+                  2p: 2px,
                   2n: 8px,
                   3n: 12px,
                   4n: 16px,

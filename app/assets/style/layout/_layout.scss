@@ -34,23 +34,58 @@
 //讀取動畫end
 
 
-
-header{
-    background-color: $primary;
+.frame{
     position: fixed;
-    top:0;
+    left: 0;
+    top: 0;
     width: 100%;
-    z-index:99;
-    
+    height: 100%;
+    pointer-events: none;
+    padding: 20px;
+    @include phone{
+        padding: 12px;
+    }
 }
+.nav-pc{
+    position: fixed;
+        z-index: 1030;
+        top: 20px;
+        left: 20px;
+        width:calc( 100% - 40px );
+        background: $secondary;
+        border: 2px solid $primary;
+        @include phone{
+            width:calc( 100% - 24px );
+            top: auto;
+            top: 12px;
+            left: 12px;
+        }
+}
+.nav-phone{
+
+    position: fixed;
+    z-index: 1030;
+    top: 20px;
+    left: 20px;
+    width:calc( 100% - 40px );
+    background: $secondary;
+    border: 2px solid $primary;
+    @include phone{
+        width:calc( 100% - 24px );
+        top: auto;
+        bottom: 12px;
+        left: 12px;
+    }
+}
+
 
    
 .logo{
     a{
         display: block;
-        width: 190px;
-        height: 32px;
-        background-image: url("../images/logo.svg");
+        width: 40px;
+        height: 48px;
+        background-image: url("../images/dean-logo.svg");
         background-repeat: no-repeat;
         background-position: center;
         background-size: 100%;
@@ -58,10 +93,10 @@ header{
         overflow: hidden;
         text-indent: 101%;
         white-space: nowrap;
-        @include phone{
-            width: 127.41px;
-            height: 24px;
-        }
+       @include phone{
+        width: 20px;
+        height: 24px;
+       }
     }
 }
 
@@ -121,12 +156,12 @@ header{
                 width: 0%;
                 margin: auto;
                 color:transparent;
-                background:$brand-color;
+                // background:$brand-color;
                 height: 1px;
                 transition: all .5s;
             }
             &:hover{
-                color:$brand-color;
+                // color:$brand-color;
                 &::after{
                     width: 100%;
                 }
@@ -151,9 +186,7 @@ header{
 
 
 // footer start
-footer{
-    background-color: $primary;
-}
+
 
 .footer-content{
 
@@ -174,7 +207,7 @@ footer{
         &:hover{
 
             &::before{
-                    background-color: $hover-color;
+                    // background-color: $hover-color;
                     height: 4px;
                 }
         }

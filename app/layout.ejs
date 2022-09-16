@@ -28,104 +28,77 @@
       <!-- loading start -->
    <div class="loading-overlay">
     <div class="loading-logo">
-      <img src="./assets/images/logo.svg" alt="">
+      <img src="./assets/images/dean-logo.svg" alt="">
     </div>
 
   </div>
   <!-- loading end -->
    <!-- header start -->
-    <header class="fixed-top bg-light">
-      <nav>
-        <div class=" d-flex justify-content-between align-items-center container-xxl">
-          <div class="btn-burger"></div>
-          <div class="logo pos-absolute pos-md-static top-50 start-50  translate-middle translate-middle-md-none ">
-            <h1 class="py-5" >
-              <a href="index.html">餅乾生產餡 iiincookie</a>
-            </h1>
-          </div>
-       <div class="nav__content d-flex">
-        <div class="nav__content__main d-flex  me-7 gap-md-7 flex-column flex-md-row align-items-center bg-light pos-fixed pos-md-static top-0 start-0 w-100 vh-100 vh-md-auto gap-8  justify-content-center">
-          <a class=" py-6  " href="product.html">商品</a>
-          <a class=" py-6  " href="about.html">關於iiin</a>
-          <a class=" py-6  " href="faq.html">FAQ</a>
-          <a class=" py-6  " href="custom.html">鐵盒訂製</a>
-          <a class=" py-6  " href="login.html"><img src="./assets/images/account.svg" alt=""></a>
-          
-          
-         </div>
-         <!-- <a class=" py-6 d-none"  href="shoppingcart.html" class="nav-content_cart"alt=""><img src="./assets/images/icon-cart.svg" alt="">
-         </a> -->
+   <div class="wrapper">
+    <div class="frame">
+      <div class="frame-inner w-100 h-100 pos-relative">
 
-         <a class=" py-6 " data-bs-toggle="offcanvas" href="#offcanvasRight" class=" nav-content_cart" alt=""
-         role="button" 
-         aria-controls=" offcanvasRight "><img src="./assets/images/icon-cart.svg" alt="">
-         </a>
-         
-        </div>
-    <!--購物車側欄  -->
-<div class="offcanvas offcanvas-end bg-light-gray" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-  <div class="offcanvas-header">
-    <h4 class="fs-4">購物車預覽</h4>
-    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
-  <div class="offcanvas-body">
-    <ul>
-        <li class="d-flex border-bottom border-black-10 py-6 gap-2">
-          <span class="material-symbols-outlined cursor-pointer">
-            close
-            </span>
-          <img class="w-20 object-cove" src="./assets/images/rectangel/choclate.jpg" alt="">
-          <div>
-            <p class="mb-2">伯爵巧克力夾餡(6入）</p>
-            <p class="mb-2">x1</p>
-            <p>NT$350</p>
-          </div>
-        </li>
-        <li class="d-flex border-bottom border-black-10 py-6 gap-2 mb-4">
-          <span class="material-symbols-outlined cursor-pointer">
-            close
-            </span>
-          <img class="w-20 object-cove" src="./assets/images/rectangel/lightwood正方形.jpg" alt="">
-          <div>
-            <p class="mb-2">鐵盒禮盒</p>
-            <p class="mb-2">x1</p>
-            <p>NT$600</p>
-          </div>
-      
-        </li>
-    </ul>
-    <div class="d-flex justify-content-between align-items-center">
-      <p>NT$950</p>
-      <a class="btn btn-primary py-2 px-7" href="shoppingcart.html">來結帳囉</a>
-    </div>
-</div>
-</div>
-   <!--購物車側欄  -->
+        <div class="h-2p w-100 bottom-0 start-0 bg-primary pos-absolute"></div>
+        <div class="h-2p w-100 top-0 start-0 bg-primary pos-absolute"></div>
+        <div class="w-2p h-100 top-0 start-0 bg-primary pos-absolute"></div>
+        <div class="w-2p h-100 top-0 end-0 bg-primary pos-absolute"></div>
        
-      </nav>  
-    </header>
-    <!-- header  end-->
-    <!-- main content start -->
-    <main>
-      <%- contents %>
-    </main>
-     <!-- main content end -->
-     <!-- footer start  -->
-     <footer>
-      <div class="container">
-        <div class="footer-content d-flex justify-content-between align-items-end py-7">
-          <div>
-            <a class=" light-hover transition-5s fs-8 font-serifTc d-flex gap-4 mb-4 mb-md-6" href="https://www.instagram.com/iiin.cookies/" target="_blank" >
-              <img src="./assets/images/icon-ig.svg" alt="">
-              instagram
-            </a>
-            <p class="fs-8 text-light  font-serifTc">Copyright © 2022 餅乾生產餡.</p>
-          </div>
-          <p class="pagetop pe-2 light-hover font-serifTc pos-relative cursor-pointer">page top</p>
-        </div>
       </div>
-    </footer>
-       <!-- footer end  --> 
+    </div>
+     <header >
+       <nav class="d-md-flex justify-content-between nav-pc ">
+         <div class="logo border-2 border-end border-secondary border-md-primary p-4 p-md-5 ">
+           <h1>
+             <a  class="mx-auto" href="index.html">DeanLeePortfolio 李東穎作品集</a>
+           </h1>
+         </div>  
+         <div class="w-100">
+          <ul class="d-none d-md-flex ">
+            <li class="d-flex justify-content-center align-items-center w-50 border-end border-2">
+              <a class="p-5" href="about.html">
+                About me
+              </a>
+            </li>
+            <li class="p-5 w-50 ">
+              <a  class="d-flex flex-column align-items-center  " href="works.html">
+                <span class="material-symbols-outlined">
+                  apps
+                  </span>
+                <p>Works</p>
+              </a>
+            </li>
+          </ul>
+       
+         </div>
+       </nav> 
+<!-- 手機 -->
+       <div class="nav-phone d-flex d-md-none">
+         <ul class="d-flex d-md-none w-100">
+          <li class="w-30 d-flex justify-content-center align-items-center border-2 border-end"><a href="index.html">Home</a></li>
+          <li class="w-30 d-flex justify-content-center align-items-center border-2 border-end"><a href="about.html">About</a></li>
+          <li class="p-3 w-40 ">
+            <a  class="d-flex flex-column align-items-center " href="works.html">
+              <span class="material-symbols-outlined">
+                apps
+                </span>
+              <p>Works</p>
+            </a>
+          </li>
+         </ul> 
+       </div> 
+       <!-- 手機 -->
+     </header>
+     <!-- header  end-->
+     <!-- main content start -->
+     <main>
+       <%- contents %>
+     </main>
+      <!-- main content end -->
+      <!-- footer start  -->
+      <footer>
+     </footer>
+        <!-- footer end  -->
+   </div>
 
 <!-- bs js -->
 <script src="./assets/js/vendors.js"></script>
