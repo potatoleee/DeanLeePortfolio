@@ -627,8 +627,8 @@ progress {
 .container-xl,
 .container-xxl {
   width: 100%;
-  padding-right: var(--bs-gutter-x, 16px);
-  padding-left: var(--bs-gutter-x, 16px);
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
   margin-right: auto;
   margin-left: auto;
 }
@@ -7300,7 +7300,7 @@ fieldset:disabled .btn {
 }
 
 .toast-container > :not(:last-child) {
-  margin-bottom: 16px;
+  margin-bottom: 0.75rem;
 }
 
 .toast-header {
@@ -20792,7 +20792,7 @@ input[type="radio"] {
 
 @media (max-width: 767px) {
   .nav-pc {
-    width: calc( 100% - 8px);
+    width: auto;
     top: auto;
     top: 4px;
     left: 4px;
@@ -20833,6 +20833,20 @@ input[type="radio"] {
           align-items: flex-end;
 }
 
+@media (max-width: 767px) {
+  .leftnav {
+    width: calc( 100% - 8px);
+    height: 40px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    left: 4px;
+  }
+}
+
 .leftnav__content {
   font-size: 12px;
   -webkit-transform: rotate(-90deg);
@@ -20846,8 +20860,10 @@ input[type="radio"] {
 }
 
 @media (max-width: 767px) {
-  .leftnav {
-    display: none;
+  .leftnav__content {
+    -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+            transform: rotate(0deg);
   }
 }
 
