@@ -1,9 +1,17 @@
-
+::selection{
+    background:$primary;
+    color: $secondary;
+}
+::-moz-selection {
+    background:$primary;
+    color: $secondary;
+  }
 
 // 使footer置底 start
 html,body{
     height: 100%;
     margin: 0;
+   
 }
 // body {
 //     display: flex; /*使物件依序排列*/
