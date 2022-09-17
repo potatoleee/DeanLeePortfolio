@@ -79,7 +79,7 @@
         background: $secondary;
         border: 2px solid $primary;
         @include phone{
-            width:calc( 100% - 8px );
+            width:auto;
             top: auto;
             top: 4px;
             left: 4px;
@@ -111,17 +111,27 @@
     border: 2px solid $primary;
     display: flex;
     align-items: flex-end;
+    @include phone{
+        width: calc( 100% - 8px);
+        height: 40px;
+        align-items: center;
+        justify-content: center;
+        left: 4px;
+
+    }
     &__content{
         font-size: 12px;
         transform: rotate(-90deg);
         white-space: nowrap;
         transform-origin: top left;
         line-height: 36px;
+        @include phone{
+            transform: rotate(0deg);
+        }
     }
-    @include phone{
-        display: none;
-    }
-
+   
+}
+.topnav{
 
 }
 

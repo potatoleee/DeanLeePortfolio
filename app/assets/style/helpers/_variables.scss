@@ -403,7 +403,7 @@ $gutters: $spacers !default;
 
 // Container padding
 
-$container-padding-x: 16px;//$grid-gutter-width * .5 !default;
+$container-padding-x: $grid-gutter-width * .5 !default;
 
 
 // Components
