@@ -102,6 +102,28 @@
     }
 }
 
+.leftnav{
+    position: fixed;
+    left: 20px;
+    width: 40px;
+    height: calc( 100% - 40px);
+    background-color: $secondary;
+    border: 2px solid $primary;
+    display: flex;
+    align-items: flex-end;
+    &__content{
+        font-size: 12px;
+        transform: rotate(-90deg);
+        white-space: nowrap;
+        transform-origin: top left;
+        line-height: 36px;
+    }
+    @include phone{
+        display: none;
+    }
+
+
+}
 
    
 .logo{
