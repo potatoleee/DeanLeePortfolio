@@ -83,6 +83,41 @@
         }
     }
 }
+// .btn-hover{
+//     position: relative;
+//     &::before{
+//         position: absolute;
+//         content: "";
+//         height: 100%;
+//         width: 0%;
+//         left: 0;
+//         top:0;
+//         background-color: $primary;
+//         transition: all .5s;
+//     }
+//     &::after{
+//         position: absolute;
+//         content: "關於我";
+//         top: 50%;
+//         left: 50%;
+//         transform: translate(-50% ,-50%);
+//         color: $secondary;
+//         opacity: 0;
+//         font-size: 20px;
+//         letter-spacing: 4px;
+//         transition: all .5s;
+//     }
+//     &:hover{
+//           &::before{
+//             background-color: $primary;
+//             width: 100%;
+//           }
+//           &::after{
+//             opacity: 1;
+//           }
+//         }
+// }
+
 .btn-hover{
     position: relative;
     &::before{
@@ -97,13 +132,13 @@
     }
     &::after{
         position: absolute;
-        content: "關於我";
+        content: "";
         top: 50%;
         left: 50%;
         transform: translate(-50% ,-50%);
         color: $secondary;
         opacity: 0;
-        font-size: 20px;
+        font-size: 16px;
         letter-spacing: 4px;
         transition: all .5s;
     }
@@ -116,6 +151,20 @@
             opacity: 1;
           }
         }
+}
+
+.btn-about{
+    &::after{
+        content: " 關於我 ";
+        font-size: 20px;
+    }
+}
+
+.btn-visit{
+    &::after{
+        content: " GO! ";
+        
+    }
 }
 
 .title-stroke{
@@ -138,3 +187,8 @@
         height: 100%;
     }
 }
+
+// .infinite-img{
+//     background-image: url("../images/stripes-light-bg.webp");
+//     background-size: cover;
+// }
