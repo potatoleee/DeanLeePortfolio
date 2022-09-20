@@ -20424,7 +20424,7 @@ fieldset:disabled .btn {
 
 .btn-hover::after {
   position: absolute;
-  content: "關於我";
+  content: "";
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -20432,7 +20432,7 @@ fieldset:disabled .btn {
           transform: translate(-50%, -50%);
   color: #f5f5f5;
   opacity: 0;
-  font-size: 20px;
+  font-size: 16px;
   letter-spacing: 4px;
   -webkit-transition: all .5s;
   -o-transition: all .5s;
@@ -20446,6 +20446,15 @@ fieldset:disabled .btn {
 
 .btn-hover:hover::after {
   opacity: 1;
+}
+
+.btn-about::after {
+  content: " 關於我 ";
+  font-size: 20px;
+}
+
+.btn-visit::after {
+  content: " GO! ";
 }
 
 .title-stroke {
