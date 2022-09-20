@@ -127,7 +127,9 @@ $utilities: map-merge(
           4n: 16px,
           5n: 20px,
           8n: 32px,
+          10n: 40px,
           12n: 48px,
+          20n: 80px,
           25: 25%,
           60: 60%,
           50: 50%,
@@ -223,6 +225,7 @@ $utilities: map-merge(
               property: letter-spacing,
               class: letterSpace,
               values:( 
+                1:  1px,
                 2:  2px,
                 4:  4px,
                 8:  8px,

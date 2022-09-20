@@ -118,5 +118,23 @@
         }
 }
 
+.title-stroke{
+    color:transparent;
+    -webkit-text-stroke: 1px $primary;
+}
 
-    
+
+.videoBox{
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 50%;
+
+    video{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}

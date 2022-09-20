@@ -9,8 +9,8 @@
 
 // 使footer置底 start
 html,body{
-    height: 100%;
     margin: 0;
+    width: 100%;
    
 }
 // body {
@@ -34,7 +34,7 @@ main{
     flex-direction: column; /*使物件垂直排列*/
     min-height: 100vh;
     padding: 20px;
-    width: 100%;
+    // width: 100%;
     @include phone{
         padding: 4px;
     }

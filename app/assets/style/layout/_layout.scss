@@ -111,6 +111,7 @@
     border: 2px solid $primary;
     display: flex;
     align-items: flex-end;
+    z-index: 1020;
     @include phone{
         width: calc( 100% - 8px);
         height: 40px;
@@ -131,9 +132,7 @@
     }
    
 }
-.topnav{
 
-}
 
    
 .logo{
