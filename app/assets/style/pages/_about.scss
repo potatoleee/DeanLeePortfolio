@@ -9,7 +9,7 @@
 }
 .skate{
     perspective: 500px;
-
+    overflow: hidden;//讓skate不會顯示
         &__text{
         animation-name: scroll;
         animation-duration:3s;
