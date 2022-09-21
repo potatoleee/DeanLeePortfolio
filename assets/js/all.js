@@ -102,7 +102,7 @@ $(document).ready(function () {
         //x:“偏移”,“時間：數字越大呈現時間越久"
 
         gsap.to(".scrolling", {
-          y: -offsetTop / 6,
+          x: offsetTop / 6,
           duration: 1
         });
       }); //scroll end
@@ -112,7 +112,7 @@ $(document).ready(function () {
         //x:“偏移”,“時間：數字越大呈現時間越久"
 
         gsap.to(".scrolling", {
-          y: -offsetTop / 6,
+          x: offsetTop / 6,
           duration: 1
         });
       }); //scroll end

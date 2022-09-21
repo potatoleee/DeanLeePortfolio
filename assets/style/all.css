@@ -20790,6 +20790,59 @@ input[type="radio"] {
   color: #4c5341;
 }
 
+.about__img {
+  background-image: url("../images/about-img.JPG");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 60vh;
+}
+
+.skate {
+  -webkit-perspective: 500px;
+          perspective: 500px;
+}
+
+.skate__text {
+  -webkit-animation-name: scroll;
+          animation-name: scroll;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: cubic-bezier(0.58, 0.54, 1, 0.39);
+          animation-timing-function: cubic-bezier(0.58, 0.54, 1, 0.39);
+  right: -50px;
+  top: 50%;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform: rotateX(0deg) rotateY(45deg) rotateZ(0deg);
+          transform: rotateX(0deg) rotateY(45deg) rotateZ(0deg);
+}
+
+@-webkit-keyframes scroll {
+  from {
+    right: -50px;
+    top: 50%;
+  }
+  to {
+    right: 110%;
+    top: 80%;
+  }
+}
+
+@keyframes scroll {
+  from {
+    right: -50px;
+    top: 50%;
+  }
+  to {
+    right: 110%;
+    top: 80%;
+  }
+}
+
 .loading-overlay {
   position: fixed;
   top: 0;
