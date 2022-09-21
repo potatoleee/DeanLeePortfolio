@@ -20802,6 +20802,7 @@ input[type="radio"] {
 .skate {
   -webkit-perspective: 500px;
           perspective: 500px;
+  overflow: hidden;
 }
 
 .skate__text {
