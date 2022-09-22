@@ -69,7 +69,7 @@ $colors: (
 
 // scss-docs-start theme-color-variables
 $primary:       #4c5341;//#125A61;// $blue !default;
-$secondary:     #f5f5f5;//#DBD5CD;//$gray-600 !default;
+$secondary:     #EDE9E4;//#f5f5f5;//#DBD5CD;//$gray-600 !default;
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
@@ -329,7 +329,7 @@ $zindex-values:(
 //
 // Settings for the `<body>` element.
 
-$body-bg:                  #F5F5F5;//#DBD5CD;//$white !default;
+$body-bg:               #EDE9E4;// #F5F5F5;//#DBD5CD;//$white !default;
 $body-color:                $primary;//$gray-900 !default;
 $body-text-align:           null !default;
 
