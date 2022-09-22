@@ -354,6 +354,14 @@ $utilities: map-merge(
         0: 0,
       )
     ),
+    "border-bottom": (
+      property: border-bottom,
+      responsive: true,
+      values: (
+        null: $border-width solid $border-color,
+        0: 0,
+      )
+    ),
     "shadow": (
       property: box-shadow,
       class: shadow,

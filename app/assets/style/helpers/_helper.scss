@@ -59,7 +59,7 @@
     
     &::before{
         position: absolute;
-        content: "more detail";
+        content: "View Detail";
         color: $secondary;
         display: flex;
         justify-content: center;
@@ -72,7 +72,7 @@
         top: 0;
         left: 0;
         font-size: 20px;
-       font-family: 'Expletus Sans', cursive;
+        font-family: 'Expletus Sans', cursive;
         letter-spacing: 4px;
     }
     &:hover{
@@ -170,6 +170,18 @@
 .title-stroke{
     color:transparent;
     -webkit-text-stroke: 1px $primary;
+}
+.text-outline{
+    color:transparent;
+    -webkit-text-stroke: 1px $primary;
+    transition: all .8s;
+    letter-spacing: 1px;
+ 
+    &:hover{
+        color: $primary;
+        -webkit-text-stroke: 1px  ;
+        letter-spacing: 3px;
+    }
 }
 
 
