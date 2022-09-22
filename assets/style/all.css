@@ -20843,6 +20843,12 @@ input[type="radio"] {
   height: 60vh;
 }
 
+@media (max-width: 767px) {
+  .about__img {
+    background-attachment: initial;
+  }
+}
+
 .skate {
   -webkit-perspective: 500px;
           perspective: 500px;
