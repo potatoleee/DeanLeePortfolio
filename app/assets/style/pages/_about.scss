@@ -10,6 +10,10 @@
 .skate{
     perspective: 500px;
     overflow: hidden;//讓skate不會顯示
+    @include phone{
+        perspective: 400px;
+        height: 160px;
+    }
         &__text{
         animation-name: scroll;
         animation-duration:3s;
@@ -19,8 +23,9 @@
         top:50%;
         transform-style:preserve-3d;
         transform: rotateX(0deg) rotateY(45deg) rotateZ(0deg);
-        
+       
         }
+ 
 }
 @keyframes scroll{
     from {
