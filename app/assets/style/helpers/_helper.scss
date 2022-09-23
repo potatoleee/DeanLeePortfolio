@@ -159,6 +159,12 @@
         font-size: 20px;
     }
 }
+.btn-works{
+    &::after{
+        content: " 作品列表 ";
+        font-size: 20px;
+    }
+}
 
 .btn-visit{
     &::after{
