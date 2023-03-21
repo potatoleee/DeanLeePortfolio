@@ -20840,7 +20840,7 @@ input[type="radio"] {
 }
 
 .about__img {
-  background-image: url("../images/about-img.JPG");
+  background-image: url("../images/aboutImg.JPG");
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
