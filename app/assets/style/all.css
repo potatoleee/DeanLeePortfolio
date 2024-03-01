@@ -2546,8 +2546,7 @@ progress {
 .form-control::file-selector-button {
   padding: 0.375rem 0.75rem;
   margin: -0.375rem -0.75rem;
-  -webkit-margin-end: 0.75rem;
-          margin-inline-end: 0.75rem;
+  margin-inline-end: 0.75rem;
   color: #4c5341;
   background-color: #e9ecef;
   pointer-events: none;
@@ -2569,8 +2568,7 @@ progress {
 .form-control::-webkit-file-upload-button {
   padding: 0.375rem 0.75rem;
   margin: -0.375rem -0.75rem;
-  -webkit-margin-end: 0.75rem;
-          margin-inline-end: 0.75rem;
+  margin-inline-end: 0.75rem;
   color: #4c5341;
   background-color: #e9ecef;
   pointer-events: none;
@@ -2617,14 +2615,12 @@ progress {
 .form-control-sm::file-selector-button {
   padding: 0.25rem 0.5rem;
   margin: -0.25rem -0.5rem;
-  -webkit-margin-end: 0.5rem;
-          margin-inline-end: 0.5rem;
+  margin-inline-end: 0.5rem;
 }
 .form-control-sm::-webkit-file-upload-button {
   padding: 0.25rem 0.5rem;
   margin: -0.25rem -0.5rem;
-  -webkit-margin-end: 0.5rem;
-          margin-inline-end: 0.5rem;
+  margin-inline-end: 0.5rem;
 }
 
 .form-control-lg {
@@ -2636,14 +2632,12 @@ progress {
 .form-control-lg::file-selector-button {
   padding: 0.5rem 1rem;
   margin: -0.5rem -1rem;
-  -webkit-margin-end: 1rem;
-          margin-inline-end: 1rem;
+  margin-inline-end: 1rem;
 }
 .form-control-lg::-webkit-file-upload-button {
   padding: 0.5rem 1rem;
   margin: -0.5rem -1rem;
-  -webkit-margin-end: 1rem;
-          margin-inline-end: 1rem;
+  margin-inline-end: 1rem;
 }
 
 textarea.form-control {
@@ -6623,8 +6617,7 @@ textarea.form-control-lg {
   float: left;
   width: 100%;
   margin-right: -100%;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
   transition: transform 0.6s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
@@ -7960,6 +7953,22 @@ textarea.form-control-lg {
 
 .h-75 {
   height: 75% !important;
+}
+
+.h-70vh {
+  height: 70vh !important;
+}
+
+.h-80vh {
+  height: 80vh !important;
+}
+
+.h-90vh {
+  height: 90vh !important;
+}
+
+.h-100vh {
+  height: 100vh !important;
 }
 
 .h-100 {
@@ -10283,6 +10292,18 @@ textarea.form-control-lg {
   .h-sm-75 {
     height: 75% !important;
   }
+  .h-sm-70vh {
+    height: 70vh !important;
+  }
+  .h-sm-80vh {
+    height: 80vh !important;
+  }
+  .h-sm-90vh {
+    height: 90vh !important;
+  }
+  .h-sm-100vh {
+    height: 100vh !important;
+  }
   .h-sm-100 {
     height: 100% !important;
   }
@@ -11934,6 +11955,18 @@ textarea.form-control-lg {
   }
   .h-md-75 {
     height: 75% !important;
+  }
+  .h-md-70vh {
+    height: 70vh !important;
+  }
+  .h-md-80vh {
+    height: 80vh !important;
+  }
+  .h-md-90vh {
+    height: 90vh !important;
+  }
+  .h-md-100vh {
+    height: 100vh !important;
   }
   .h-md-100 {
     height: 100% !important;
@@ -13587,6 +13620,18 @@ textarea.form-control-lg {
   .h-lg-75 {
     height: 75% !important;
   }
+  .h-lg-70vh {
+    height: 70vh !important;
+  }
+  .h-lg-80vh {
+    height: 80vh !important;
+  }
+  .h-lg-90vh {
+    height: 90vh !important;
+  }
+  .h-lg-100vh {
+    height: 100vh !important;
+  }
   .h-lg-100 {
     height: 100% !important;
   }
@@ -15239,6 +15284,18 @@ textarea.form-control-lg {
   .h-xl-75 {
     height: 75% !important;
   }
+  .h-xl-70vh {
+    height: 70vh !important;
+  }
+  .h-xl-80vh {
+    height: 80vh !important;
+  }
+  .h-xl-90vh {
+    height: 90vh !important;
+  }
+  .h-xl-100vh {
+    height: 100vh !important;
+  }
   .h-xl-100 {
     height: 100% !important;
   }
@@ -16890,6 +16947,18 @@ textarea.form-control-lg {
   }
   .h-xxl-75 {
     height: 75% !important;
+  }
+  .h-xxl-70vh {
+    height: 70vh !important;
+  }
+  .h-xxl-80vh {
+    height: 80vh !important;
+  }
+  .h-xxl-90vh {
+    height: 90vh !important;
+  }
+  .h-xxl-100vh {
+    height: 100vh !important;
   }
   .h-xxl-100 {
     height: 100% !important;
@@ -18812,8 +18881,7 @@ input[type=radio] {
   bottom: -20px;
   z-index: 100;
   transform: translateZ(0);
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 .nav-pc {
